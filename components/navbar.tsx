@@ -12,7 +12,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="py-[38px] px-[120px] flex items-center justify-between bg-transparent border-b border-gray-600">
+    <div className="py-[38px] px-[120px] flex items-center justify-between bg-transparent  border-gray-600">
       <div className="flex items-center space-x-80">
         <Image src={pdhschool} alt="logo" className="w-auto h-10" />
         <Image src={pdhschool1} alt="" className="w-auto h-10" />
