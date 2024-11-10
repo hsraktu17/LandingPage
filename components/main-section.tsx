@@ -11,6 +11,7 @@ import Week from "./week";
 import Avg from "./avgcohort";
 import FAQ from "./faq";
 import Footer from "./footer";
+import CohortInfo from "./cohortInfo";
 
 export default function FS() {
   return (
@@ -41,6 +42,9 @@ export default function FS() {
           </div>
           <div>
             <Avg />
+          </div>
+          <div>
+            <CohortInfo />
           </div>
           <div>
             <FAQ />

@@ -1,23 +1,28 @@
 import Cards from "./card";
+import ArrowDown from '../public/Arrow Download.svg'
+import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="text-white px-6 md:px-[60px] lg:px-[120px] py-[30px] md:py-[60px] space-y-[32px] md:space-y-[64px]">
-      <div className="space-y-[16px] md:space-y-[32px]">
-        <div className="font-semibold text-[28px] md:text-[36px] lg:text-[48px] w-full md:w-[800px] lg:w-[1150px]">
+    <div className="text-white px-4 sm:px-6 md:px-[60px] lg:px-[120px] py-6 md:py-10 lg:py-[60px] space-y-6 md:space-y-8 lg:space-y-[64px]">
+      <div className="space-y-4 md:space-y-6 lg:space-y-[32px] text-center md:text-left">
+        <div className="font-semibold text-[24px] sm:text-[28px] md:text-[36px] lg:text-[48px] max-w-full md:max-w-[800px] lg:max-w-[1150px] mx-auto md:mx-0">
           Your 6-week launch pad to startup success
         </div>
-        <div className="text-[16px] md:text-[20px] lg:text-[22px] font-normal">
+        <div className="text-[14px] sm:text-[16px] md:text-[20px] lg:text-[22px] font-normal max-w-full md:max-w-[700px] mx-auto md:mx-0">
           Build, Validate, and Launch Your Dream Startup with India’s Top
           Mentors
         </div>
       </div>
-      <div>
-        <button className="bg-white py-[12px] md:py-[16px] px-[20px] md:px-[24px] text-black">
+      <div className="text-center flex flex-wrap md:text-left hero-buttons">
+        <button className="bg-white py-3 sm:py-3.5 md:py-4 px-6 sm:px-8 md:px-10 text-black w-full sm:w-96 font-medium hover:bg-gray-200 transition">
           Apply Now
         </button>
+        <button className=" ml-20 py-3 flex sm:py-3.5 md:py-4 px-6 sm:px-8 md:px-10 border-t border-b border-white text-white hover:bg-white hover:text-black transition w-full sm:w-96 download-carriculam">
+          Download  Detailed Cariculam  <Image src={ArrowDown} alt="Arrow Down" className="ml-2 "  />
+        </button>
       </div>
-      <div className="flex flex-wrap gap-6 mt-8 justify-center md:justify-start">
+      <div className="flex flex-wrap gap-4 md:gap-6 mt-6 md:mt-8 justify-center md:justify-start">
         <Cards />
       </div>
     </div>

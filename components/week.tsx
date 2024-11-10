@@ -27,7 +27,7 @@ const array = [
 
 export default function Week() {
   return (
-    <div className="flex flex-col items-center justify-center text-white p-[120px]">
+    <div className="flex flex-col items-center justify-center text-white p-[120px] common-container">
       <div className="text-[36px] font-[600] mb-2 text-center">
         Beyond the 6-Week Program
       </div>

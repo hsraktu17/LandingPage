@@ -7,11 +7,11 @@ interface CardProps {
 
 function Card({ heading, subHeading }: CardProps) {
   return (
-    <div className="p-6 bg-gray-800 text-white shadow-md w-full md:w-[300px] lg:w-[348px] h-auto md:h-[150px] lg:h-[150px] mb-4 md:mb-0">
-      <h2 className="text-[20px] sm:text-[22px] md:text-[24px] lg:text-[28px] font-semibold mb-2">
+    <div className="p-6 bg-gray-800 text-white shadow-md w-full h-auto mb-4">
+      <h2 className="text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] font-semibold mb-2">
         {heading}
       </h2>
-      <p className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-lg font-normal">
+      <p className="text-[14px] sm:text-[15px] md:text-[16px] font-normal">
         {subHeading}
       </p>
     </div>
@@ -39,7 +39,7 @@ const cardContent = [
 
 export default function Cards() {
   return (
-    <div className="flex flex-wrap space-x-20 justify-center md:justify-start">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 card-content">
       {cardContent.map((card, index) => (
         <Card key={index} heading={card.heading} subHeading={card.subHeading} />
       ))}

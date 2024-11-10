@@ -3,6 +3,8 @@
 
 import { useState } from "react";
 import CourseCards from "./courseCards";
+import ArrowDown from "../public/Arrow Download.svg";
+import Image from "next/image";
 
 const businessCentricCourses = [
   {
@@ -151,26 +153,38 @@ export default function Path() {
   const [isBusinessCentric, setIsBusinessCentric] = useState(true);
 
   return (
-    <div className="text-white py-[38px] px-[120px] flex flex-col items-center justify-center ">
+    <div className="text-white py-[38px] px-[10%] sm:px-[10px] flex flex-col items-center justify-center main-container">
       <div className="text-[36px] font-[600] max-w-4xl text-center mb-8">
         Choose the path that best aligns with your goals
       </div>
-      <div className="flex">
+      <div className="business-centric-button">
         <button
-          className={`h-[120px] w-[346px] ${isBusinessCentric ? "bg-white text-black" : "bg-transparent text-white"}`}
+          className={`h-[100px] sm:h-[120px]  w-[346px]  ${
+            isBusinessCentric
+              ? "bg-white text-black"
+              : "bg-transparent text-white"
+          } p-2 sm:p-4`}
           onClick={() => setIsBusinessCentric(true)}
         >
-          <div className="text-[24px] font-bold">Business-Centric</div>
-          <div className="text-[16px] font-normal">
+          <div className="text-[18px] sm:text-[24px]  font-bold">
+            Business-Centric
+          </div>
+          <div className="text-[10px] sm:text-[16px] font-normal">
             For aspiring entrepreneurs
           </div>
         </button>
         <button
-          className={`h-[120px] w-[346px] ${!isBusinessCentric ? "bg-white text-black" : "bg-transparent text-white"}`}
+          className={`h-[100px] sm:h-[120px]  w-[346px] ${
+            !isBusinessCentric
+              ? "bg-white text-black"
+              : "bg-transparent text-white"
+          } p-2 sm:p-4`}
           onClick={() => setIsBusinessCentric(false)}
         >
-          <div className="text-[24px] font-bold">Tech-Centric</div>
-          <div className="text-[16px] font-normal">
+          <div className="text-[18px] sm:text-[24px] font-bold">
+            Tech-Centric
+          </div>
+          <div className="text-[10px] sm:text-[16px] font-normal">
             For aspiring tech experts
           </div>
         </button>
@@ -197,33 +211,33 @@ export default function Path() {
           </>
         )}
       </div>
-      {isBusinessCentric ? (
-        <div className="mt-8 grid grid-cols-2 gap-x-[72px] gap-y-[32px]">
-          {businessCentricCourses.map((course, index) => (
-            <CourseCards
-              key={index}
-              week={course.week}
-              title={course.title}
-              topics={course.topics}
-              workshops={course.workshops}
-              assignments={course.assignments}
-            />
-          ))}
-        </div>
-      ) : (
-        <div className="mt-8 grid grid-cols-2 gap-x-[72px] gap-y-[32px]">
-          {techCentricCourses.map((course, index) => (
-            <CourseCards
-              key={index}
-              week={course.week}
-              title={course.title}
-              topics={course.topics}
-              workshops={course.workshops}
-              assignments={course.assignments}
-            />
-          ))}
-        </div>
-      )}
+      <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-[72px] business-card">
+        {isBusinessCentric
+          ? businessCentricCourses.map((course, index) => (
+              <CourseCards
+                key={index}
+                week={course.week}
+                title={course.title}
+                topics={course.topics}
+                workshops={course.workshops}
+                assignments={course.assignments}
+              />
+            ))
+          : techCentricCourses.map((course, index) => (
+              <CourseCards
+                key={index}
+                week={course.week}
+                title={course.title}
+                topics={course.topics}
+                workshops={course.workshops}
+                assignments={course.assignments}
+              />
+            ))}
+      </div>
+      <button className=" ml-20 py-3 flex sm:py-3.5 md:py-4 px-6 sm:px-8 md:px-10 border-t border-b border-white text-white hover:bg-white hover:text-black transition w-full sm:w-96 download-carriculam2">
+        Download Detailed Cariculam{" "}
+        <Image src={ArrowDown} alt="Arrow Down" className="ml-2 " />
+      </button>
     </div>
   );
 }

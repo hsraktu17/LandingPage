@@ -41,21 +41,23 @@ const imageArray = [
 
 export default function ImageCard() {
   return (
-    <div className="flex flex-wrap gap-6 justify-center mt-8 mb-8 h-[500px] overflow-y-auto">
-      {imageArray.map((item, index) => (
-        <DirectionAwareHover key={index} imageUrl={item.image.src}>
-          <div className="relative w-[200px] h-[280px] rounded-lg overflow-hidden">
-            <div className="absolute bottom-4 left-4 w-full p-4">
-              <h3 className="text-lg font-semibold text-white mb-1">
-                {item.name}
-              </h3>
-              <p className="text-white text-xs font-light">
-                {item.description}
-              </p>
+    <div className="w-full mt-8 mb-8 h-[500px] overflow-x-auto">
+      <div className="grid grid-flow-col gap-6 mentor-card">
+        {imageArray.map((item, index) => (
+          <DirectionAwareHover key={index} imageUrl={item.image.src}> 
+            <div className="relative w-[200px] h-[280px] rounded-lg overflow-hidden">
+              <div className="absolute bottom-4 left-4 w-full p-4">
+                <h3 className="text-lg font-semibold text-white mb-1">
+                  {item.name}
+                </h3>
+                <p className="text-white text-xs font-light">
+                  {item.description}
+                </p>
+              </div>
             </div>
-          </div>
-        </DirectionAwareHover>
-      ))}
+          </DirectionAwareHover>
+        ))}
+      </div>
     </div>
   );
 }
