@@ -37,13 +37,13 @@ const array = [
 export default function Extras() {
   return (
     <div className="flex flex-col items-center justify-center text-white mt-10">
-      <div className="px-[120px] text-center">
-        <div className="text-[36px] font-[600]">More Than Just a Cohort</div>
-        <div className="text-[22px] font-[400]">
+      <div className="px-6 lg:px-[120px] text-center common-container">
+        <div className="text-[28px] lg:text-[36px] font-[600]">More Than Just a Cohort</div>
+        <div className="text-[18px] lg:text-[22px] font-[400]">
           Experience real-world startup success through hands-on learning
         </div>
       </div>
-      <div className="flex flex-wrap justify-center mt-8">
+      <div className="flex flex-nowrap overflow-x-scroll mt-8 w-full px-4 lg:flex-wrap lg:overflow-auto lg:justify-center">
         {array.map((card, index) => (
           <Card
             key={index}
@@ -65,7 +65,7 @@ interface cardProps {
 
 function Card({ img, title, description }: cardProps) {
   return (
-    <div className="bg-gray-800 rounded-lg shadow-lg p-6 m-4 max-w-sm">
+    <div className="bg-gray-800 rounded-lg shadow-lg p-6 m-4 max-w-[348px] min-w-[250px]">
       <div className="flex items-center justify-center w-full h-48 mb-4">
         <Image
           src={img}
@@ -76,9 +76,9 @@ function Card({ img, title, description }: cardProps) {
         />
       </div>
       {title && (
-        <div className="text-[24px] font-[600] mb-2 text-center">{title}</div>
+        <div className="text-[20px] lg:text-[24px] font-[600] mb-2 text-center">{title}</div>
       )}
-      <div className="text-[16px] font-[400] text-center">{description}</div>
+      <div className="text-[14px] lg:text-[16px] font-[400] text-center">{description}</div>
     </div>
   );
 }

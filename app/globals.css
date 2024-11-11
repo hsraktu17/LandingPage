@@ -27,7 +27,7 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
-    --radius: 0.5rem
+    --radius: 0.5rem;
   }
   .dark {
     --background: 0 0% 3.9%;
@@ -53,7 +53,7 @@
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%
+    --chart-5: 340 75% 55%;
   }
 }
 @layer base {
@@ -63,4 +63,184 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Mobile screens (max-width: 576px) */
+@media (max-width: 576px) {
+  .main-container {
+    padding-right: 0;
+  }
+  .card-content {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .business-card {
+    display: flex !important;
+    overflow-x: scroll !important;
+    width: 100%;
+    scrollbar-width: none; /* For Firefox */
+  }
+  .course-card {
+    width: 300px !important;
+    height: 500px;
+  }
+  .common-container {
+    padding: 0 !important;
+  }
+  .business-centric-button {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .business-centric-button button {
+    height: 80px;
+    width: 100%;
+  }
+  .program-card {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    overflow: hidden;
+    padding-right: 30px;
+  }
+  .footer-bottom {
+    margin-top: 0;
+    width: 100%;
+    flex-direction: row;
+  }
+  .footer-bottom-1 {
+    margin-top: 10px;
+  }
+  .program-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0;
+  }
+  .program-container-card {
+    margin: 10px;
+  }
+  .overflow-x-scroll {
+    scrollbar-width: 0;
+  }
+  .download-carriculam {
+    margin-left: 0;
+    padding-left: 60px;
+    margin-top: 10px;
+  }
+  .download-carriculam2 {
+    margin-left: 0;
+    padding-left: 60px;
+    margin-top: 10px;
+    margin-right: 32px;
+  }
+  .direction-aware-card {
+    width: 300px;
+  }
+  .mentor-card {
+    display: flex;
+    width: 350px !important;
+    overflow-x: scroll !important;
+    scrollbar-width: none;
+    gap: 10px;
+  }
+  .footer-main {
+    height: 500px !important;
+  }
+  .footer-text {
+    text-align: center;
+  }
+  .cohort-main {
+    height: 100%;
+  }
+  .cohort-container {
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 10px;
+    flex-wrap: wrap;
+  }
+  .cohort-accordion {
+    width: 100%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 990px) {
+  .card-content {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .business-card {
+    display: flex !important;
+    overflow-x: scroll !important;
+    width: 100%;
+    scrollbar-width: none;
+  }
+  .course-card {
+    width: 460px !important;
+    height: 500px;
+  }
+  .common-container {
+    padding: 0 !important;
+  }
+  .main-container {
+    padding: 10px !important;
+  }
+  .business-centric-button {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .business-centric-button button {
+    height: 80px;
+    width: 100%;
+  }
+  .program-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0;
+  }
+  .hero-buttons button {
+    width: 100%;
+  }
+  .download-carriculam {
+    margin-left: 0;
+    padding-left: 230px !important;
+    margin-top: 20px;
+  }
+  .overflow-x-scroll {
+    scrollbar-width: 0;
+  }
+  .program-container-card {
+    margin: 10px;
+  }
+  .mentor-card {
+    width: 750px !important;
+    display: grid !important;
+    scrollbar-width: 0 !important;
+  }
+  .card {
+    width: 300px;
+  }
+  .md\:w-screen {
+    width: 100% !important;
+  }
+  .cohort-main {
+    height: 100%;
+  }
+  .cohort-container {
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 10px;
+    flex-wrap: nowrap;
+  }
+}
+
+/* Large screens (min-width: 990px) */
+@media (min-width: 990px) {
+  .business-card {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .download-carriculam {
+    padding-left: 70px !important;
+  }
+}
+.accordion-content {
+  padding: 16px;
+  overflow: auto;
+  max-height: none;
+}
+
+.hover\:underline:hover {
+  text-decoration: none !important;
 }
