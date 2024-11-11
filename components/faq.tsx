@@ -16,7 +16,7 @@ export default function FAQ() {
         <Accordion type="single" collapsible>
           <AccordionItem value="item-1">
             <AccordionTrigger className="text-left">
-            Frequently Asked Questions 1
+              Frequently Asked Questions 1
             </AccordionTrigger>
             <AccordionContent className="text-left">
               Yes. It adheres to the WAI-ARIA design pattern.
@@ -24,7 +24,7 @@ export default function FAQ() {
           </AccordionItem>
           <AccordionItem value="item-2">
             <AccordionTrigger className="text-left">
-            Frequently Asked Questions 2
+              Frequently Asked Questions 2
             </AccordionTrigger>
             <AccordionContent className="text-left">
               Yes. It comes with default styles that match the other components
@@ -33,10 +33,10 @@ export default function FAQ() {
           </AccordionItem>
           <AccordionItem value="item-3">
             <AccordionTrigger className="text-left">
-            Frequently Asked Questions 3
+              Frequently Asked Questions 3
             </AccordionTrigger>
             <AccordionContent className="text-left">
-              Yes. It's animated by default, but you can disable it if you
+              Yes. It@apos; s animated by default, but you can disable it if you
               prefer.
             </AccordionContent>
           </AccordionItem>
