@@ -38,7 +38,9 @@ export default function Extras() {
   return (
     <div className="flex flex-col items-center justify-center text-white mt-10">
       <div className="px-6 lg:px-[120px] text-center common-container">
-        <div className="text-[28px] lg:text-[36px] font-[600]">More Than Just a Cohort</div>
+        <div className="text-[28px] lg:text-[36px] font-[600]">
+          More Than Just a Cohort
+        </div>
         <div className="text-[18px] lg:text-[22px] font-[400]">
           Experience real-world startup success through hands-on learning
         </div>
@@ -58,7 +60,7 @@ export default function Extras() {
 }
 
 interface cardProps {
-  img: any;
+  img: string;
   title?: string;
   description: string;
 }
@@ -76,9 +78,13 @@ function Card({ img, title, description }: cardProps) {
         />
       </div>
       {title && (
-        <div className="text-[20px] lg:text-[24px] font-[600] mb-2 text-center">{title}</div>
+        <div className="text-[20px] lg:text-[24px] font-[600] mb-2 text-center">
+          {title}
+        </div>
       )}
-      <div className="text-[14px] lg:text-[16px] font-[400] text-center">{description}</div>
+      <div className="text-[14px] lg:text-[16px] font-[400] text-center">
+        {description}
+      </div>
     </div>
   );
 }

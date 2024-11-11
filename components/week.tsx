@@ -49,7 +49,7 @@ export default function Week() {
 }
 
 interface cardProps {
-  img: any;
+  img: string;
   title?: string;
   description: string;
 }
