@@ -9,12 +9,14 @@ export const DirectionAwareHover = ({
   childrenClassName,
   imageClassName,
   className,
+  comingSoon,
 }: {
   imageUrl: string;
   children: React.ReactNode | string;
   childrenClassName?: string;
   imageClassName?: string;
   className?: string;
+  comingSoon?: boolean;
 }) => {
   const ref = useRef<HTMLDivElement>(null);
 
@@ -64,7 +66,7 @@ export const DirectionAwareHover = ({
       onMouseEnter={handleMouseEnter}
       ref={ref}
       className={cn(
-        "md:h-60 w-45 h-45 md:w-60 bg-transparent group/card relative card",
+        "md:h-90 w-45 h-90 md:w-60 bg-transparent group/card relative card",
         className
       )}
     >
@@ -89,7 +91,10 @@ export const DirectionAwareHover = ({
               alt="image"
               className={cn(
                 "h-full w-full object-cover transition-transform duration-300 ease-out",
-                imageClassName
+                imageClassName,
+                {
+                  "blur-lg opacity-50": comingSoon,
+                }
               )}
               width="1000"
               height="1000"
@@ -150,7 +155,7 @@ const textVariants = {
     opacity: 0,
   },
   top: {
-    y: -20,
+    // y: -20,
     opacity: 1,
   },
   bottom: {
@@ -158,11 +163,11 @@ const textVariants = {
     opacity: 1,
   },
   left: {
-    x: -2,
+    // x: -2,
     opacity: 1,
   },
   right: {
-    x: 20,
+    // x: 20,
     opacity: 1,
   },
 };

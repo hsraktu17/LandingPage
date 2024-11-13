@@ -25,7 +25,7 @@ const array = [
 
 export default function Avg() {
   return (
-    <div className="flex flex-col items-center justify-center text-white p-[120px] common-container">
+    <div className="flex flex-col items-center justify-center text-white py-[120px] px-[192px] common-container">
       <div className="text-[36px] font-[600] mb-2 text-center">
         Average Program Benefits
       </div>
@@ -45,7 +45,7 @@ interface cardProps {
 
 export function Card({ title, description }: cardProps) {
   return (
-    <div className="bg-gray-800 program-container-card rounded-lg shadow-lg p-5 m-4 text-left">
+    <div className="bg-gray-800 program-container-card shadow-lg p-5 m-4 text-left">
       {title && <div className="text-[48px] font-[600] mb-2">{title}</div>}
       <div className="text-[16px] font-[400]">{description}</div>
     </div>

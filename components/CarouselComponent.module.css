@@ -1,0 +1,23 @@
+/* CarouselComponent.module.css */
+.slider {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .imageWrapper {
+    transition: transform 0.3s ease-in-out;
+    opacity: 0.7;
+  }
+  
+  .slick-center .imageWrapper {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  
+  .image {
+    border-radius: 10px;
+    height: 500px;
+    object-fit: cover;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  

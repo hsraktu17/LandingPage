@@ -9,7 +9,7 @@ import arrowRight from "@/public/Arrow Right.svg";
 import Image from "next/image";
 export default function CohortInfo() {
   return (
-    <div className="flex items-center justify-center bg-[#00000066] h-[692px] cohort-main">
+    <div className="flex items-center justify-center bg-[#00000066] h-[692px] cohort-main" id="cohortInfo">
       {/* Centering container */}
       <div className="flex w-[1488px] min-h-[452px] gap-[96px] cohort-container">
         {/* Left Box */}
@@ -48,20 +48,17 @@ export default function CohortInfo() {
                     </div>
                  {/* Replace with your arrow icon */}
                   </AccordionTrigger>
-                  <AccordionContent className="text-left accordion-content">
-                    Yes. It adheres to 
+                  <AccordionContent className="text-left accordion-content flex justify-between text-xl font-bold">
+                  <span>Until Nov 20</span> <span>INR 25000</span>
                   </AccordionContent>
-                  <AccordionContent className="text-left accordion-content">
-                    Yes. It adheres to 
+                  <AccordionContent className="text-left accordion-content flex justify-between text-xl font-bold">
+                  <span>Until Nov 30</span> <span>INR 30000</span>
                   </AccordionContent>
-                  <AccordionContent className="text-left accordion-content">
-                    Yes. It adheres to
+                  <AccordionContent className="text-left accordion-content flex justify-between text-xl font-bold">
+                  <span>Until Dec 15</span> <span>INR 50000</span>
                   </AccordionContent>
-                  <AccordionContent className="text-left accordion-content">
-                    Yes. It adheres to 
-                  </AccordionContent>
-                  <AccordionContent className="text-left accordion-content">
-                    Yes. It adheres to
+                  <AccordionContent className="text-left accordion-content flex justify-between text-xl font-bold">
+                  <span>Until Dec 30</span> <span>INR 75000 </span>
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>

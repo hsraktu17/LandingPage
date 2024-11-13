@@ -3,9 +3,8 @@
 
 import { useState } from "react";
 import CourseCards from "./courseCards";
-import ArrowDown from "../public/Arrow Download.svg";
+import ArrowDown from "../public/ArrowDownB.svg";
 import Image from "next/image";
-
 const businessCentricCourses = [
   {
     week: "Week 1",
@@ -153,7 +152,7 @@ export default function Path() {
   const [isBusinessCentric, setIsBusinessCentric] = useState(true);
 
   return (
-    <div className="text-white py-[38px] px-[10%] sm:px-[10px] flex flex-col items-center justify-center main-container">
+    <div className="text-white py-[38px] px-[10%] sm:px-[10px] flex flex-col items-center justify-center main-container" id="curriculum">
       <div className="text-[36px] font-[600] max-w-4xl text-center mb-8">
         Choose the path that best aligns with your goals
       </div>
@@ -170,7 +169,7 @@ export default function Path() {
             Business-Centric
           </div>
           <div className="text-[10px] sm:text-[16px] font-normal">
-            For aspiring entrepreneurs
+            Idea to Impact
           </div>
         </button>
         <button
@@ -185,7 +184,7 @@ export default function Path() {
             Tech-Centric
           </div>
           <div className="text-[10px] sm:text-[16px] font-normal">
-            For aspiring tech experts
+            Code to Reality
           </div>
         </button>
       </div>
@@ -234,8 +233,10 @@ export default function Path() {
               />
             ))}
       </div>
-      <button className=" ml-20 py-3 flex sm:py-3.5 md:py-4 px-6 sm:px-8 md:px-10 border-t border-b border-white text-white hover:bg-white hover:text-black transition w-full sm:w-96 download-carriculam2">
-        Download Detailed Cariculam{" "}
+      <button className=" ml-20 py-3 flex sm:py-3.5 md:py-4  pl-16 bg-white text-black transition w-full sm:w-96 download-carriculam2">
+      <a href="/PDH School _ Brochure [Cohort 2].pdf" download>
+        Download Detailed Curriculum{" "}
+        </a>
         <Image src={ArrowDown} alt="Arrow Down" className="ml-2 " />
       </button>
     </div>

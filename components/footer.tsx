@@ -4,6 +4,7 @@ import twitter from "@/public/x.svg";
 import linkedin from "@/public/linkedin.svg";
 import facebook from "@/public/facebook.svg";
 import Image from "next/image";
+import { FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -30,10 +31,12 @@ export default function Footer() {
         <div className="flex flex-col lg:flex-row justify-between items-center mb-4 space-y-4 lg:space-y-0">
           <Image src={pdhschool1} alt="Logo" className="w-auto h-12 sm:h-16" />
 
-          <div className="flex space-x-4">
-            <Image src={facebook} alt="facebook" className="h-12 w-12" />
+          <div className="flex space-x-4 items-center">
+         <a href="https://www.instagram.com/pdhschool/profilecard/?igsh=MW93Y21udXE2eW9vdw==" target="_blank">  <FaInstagram size={30}  className="text-white"/></a>
             <Image src={twitter} alt="twitter" className="h-12 w-12" />
+            <a href="https://www.linkedin.com/company/project-dark-horse-school/" target="_blank"> 
             <Image src={linkedin} alt="linkedin" className="h-12 w-12" />
+            </a>
           </div>
         </div>
 
