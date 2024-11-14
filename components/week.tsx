@@ -39,7 +39,7 @@ export default function Week() {
       <div className="text-[22px] font-[400] text-center">
         PDH School’s commitment doesn’t end at graduation
       </div>
-      <div className="flex justify-center mt-8">
+      <div className="flex justify-center mt-8 week-card">
         {array.map((card, index) => (
           <Card
             key={index}
@@ -61,7 +61,7 @@ interface cardProps {
 
 export function Card({ img, title, description }: cardProps) {
   return (
-    <div className="bg-gray-800 rounded-lg shadow-lg p-6 m-4 w-[300px]">
+    <div className="bg-gray-800 rounded-lg shadow-lg p-6 m-4 w-[300px] card-section">
       <div className="flex items-center justify-center w-full h-48 mb-4">
         <Image src={img} alt={title || "Card Image"} className="rounded" />
       </div>

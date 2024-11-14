@@ -108,7 +108,7 @@
                 ease: "easeOut",
               }}
               className={cn(
-                "text-white absolute bottom-4 left-4 z-40",
+                "text-white absolute bottom-4 left-4 z-40 mentor-text",
                 childrenClassName
               )}
             >

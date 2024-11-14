@@ -37,10 +37,10 @@ export default function Footer() {
         </div>
       </div>
       <div className="mt-20 footer-bottom w-full px-4 sm:px-10">
-        <div className="flex flex-col lg:flex-row justify-between items-center mb-4 space-y-4 lg:space-y-0">
+        <div className="flex flex-col  justify-between items-center mb-4 space-y-4 lg:space-y-0 footer-section">
           <Image src={pdhschool1} alt="Logo" className="w-auto h-12 sm:h-16" />
 
-          <div className="flex space-x-4 items-center">
+          <div className="flex space-x-4 items-center footer-icons">
             <a
               href="https://www.instagram.com/pdhschool/profilecard/?igsh=MW93Y21udXE2eW9vdw=="
               target="_blank"
@@ -59,7 +59,7 @@ export default function Footer() {
         </div>
 
         {/* Privacy Policy and Terms of Use */}
-        <div className="flex flex-col lg:flex-row justify-center text-white lg:justify-end gap-4 mt-1 text-center lg:text-left">
+        <div className="flex flex-col lg:flex-row justify-center text-white lg:justify-end gap-4 mt-1 text-center lg:text-left footer-section-2">
           <p className="cursor-pointer">Privacy Policy</p>
           <p className="cursor-pointer">Terms of Use</p>
         </div>
