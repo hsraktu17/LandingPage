@@ -9,19 +9,18 @@ const array = [
   {
     img: img1,
     title: "Incubation at PDH Ventures",
-    description: "Get your start-up incubated at PDH Ventures as Alumni at no-cost.",
+    description:
+      "Get your start-up incubated at PDH Ventures as Alumni at no-cost.",
   },
   {
     img: img2,
     title: "Regular Advisory",
-    description:
-      "Continued guidance as you navigate early-stage challenges.",
+    description: "Continued guidance as you navigate early-stage challenges.",
   },
   {
     img: img3,
     title: "Startup Management System  ",
-    description:
-      "Access to our all-purpose work operating system.",
+    description: "Access to our all-purpose work operating system.",
   },
   {
     img: img4,
@@ -40,19 +39,15 @@ export default function Week() {
       <div className="text-[22px] font-[400] text-center">
         PDH School’s commitment doesn’t end at graduation
       </div>
-      <div className="flex flex-wrap justify-center mt-8">
+      <div className="flex justify-center mt-8">
         {array.map((card, index) => (
-        
           <Card
             key={index}
             img={card.img}
             title={card.title}
             description={card.description}
           />
-       
-          
         ))}
-        
       </div>
     </div>
   );

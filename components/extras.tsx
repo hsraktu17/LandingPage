@@ -45,7 +45,7 @@ export default function Extras() {
           Experience real-world startup success through hands-on learning
         </div>
       </div>
-      <div className="flex flex-nowrap overflow-x-scroll mt-8 w-full px-4 lg:flex-wrap lg:overflow-auto lg:justify-center">
+      <div className="flex flex-nowrap overflow-x-scroll mt-8 w-full px-4 lg:overflow-auto lg:justify-center">
         {array.map((card, index) => (
           <Card
             key={index}
