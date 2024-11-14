@@ -66,10 +66,8 @@
 }
 
 /* Mobile screens (max-width: 576px) */
-@media (max-width: 576px) {
-  .main-container {
-    padding-right: 0;
-  }
+@media screen and (max-width: 576px) {
+  
   .card-content {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -78,6 +76,10 @@
     overflow-x: scroll !important;
     width: 100%;
     scrollbar-width: none; /* For Firefox */
+    padding-left: 36px;
+  }
+  .hero-buttons a {
+    width: 100%;
   }
   .course-card {
     width: 300px !important;
@@ -123,10 +125,10 @@
     margin-top: 10px;
   }
   .download-carriculam2 {
-    margin-left: 0;
     padding-left: 60px;
     margin-top: 10px;
-    margin-right: 32px;
+    width: 400px;
+    margin-right: 77px;
   }
   .direction-aware-card {
     width: 300px;
@@ -153,8 +155,14 @@
     padding-right: 10px;
     flex-wrap: wrap;
   }
+  .main-container, .extra-page, .mentors-page{
+    padding: 0;
+  }
   .cohort-accordion {
     width: 100%;
+  }
+  .cohort-info{
+    padding: 0;
   }
 }
 
@@ -190,7 +198,7 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0;
   }
-  .hero-buttons button {
+  .hero-buttons a {
     width: 100%;
   }
   .download-carriculam {

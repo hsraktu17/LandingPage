@@ -36,7 +36,7 @@ const array = [
 
 export default function Extras() {
   return (
-    <div className="flex flex-col items-center justify-center text-white mt-10">
+    <div className="flex flex-col items-center justify-center text-white mt-10 px-[120px] extra-page">
       <div className="px-6 lg:px-[120px] text-center common-container">
         <div className="text-[28px] lg:text-[36px] font-[600]">
           More Than Just a Cohort
@@ -67,7 +67,7 @@ interface cardProps {
 
 function Card({ img, title, description }: cardProps) {
   return (
-    <div className="bg-gray-800 rounded-lg shadow-lg p-6 m-4 max-w-[348px] min-w-[250px]">
+    <div className="bg-gray-800 rounded-lg shadow-lg p-6 m-4 max-w-[316px] min-w-[250px]">
       <div className="flex items-center justify-center w-full h-48 mb-4">
         <Image
           src={img}

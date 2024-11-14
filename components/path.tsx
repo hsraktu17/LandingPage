@@ -152,7 +152,7 @@ export default function Path() {
   const [isBusinessCentric, setIsBusinessCentric] = useState(true);
 
   return (
-    <div className="text-white py-[38px] px-[10%] sm:px-[10px] flex flex-col items-center justify-center main-container" id="curriculum">
+    <div className="text-white py-[38px] px-[120px] sm:px-[10px] flex flex-col items-center justify-center main-container" id="curriculum">
       <div className="text-[36px] font-[600] max-w-4xl text-center mb-8">
         Choose the path that best aligns with your goals
       </div>
