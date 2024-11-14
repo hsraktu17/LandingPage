@@ -5,7 +5,7 @@ import img2 from "@/public/manoj.svg";
 import img3 from "@/public/harsh.svg";
 import img5 from "@/public/image.svg";
 import img6 from "@/public/image (1).svg";
-import img7 from "@/public/image (2).svg";
+// import img7 from "@/public/image (2).svg";
 // import img8 from "@/public/Pexels Photo by Italo Melo.svg";
 import { DirectionAwareHover } from "./ui/direction-aware-hover";
 
