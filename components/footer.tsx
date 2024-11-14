@@ -36,7 +36,7 @@ export default function Footer() {
           </button>
         </div>
       </div>
-      <div className="mt-20 footer-bottom w-full px-4 sm:px-10 lg:px-64">
+      <div className="mt-20 footer-bottom w-full px-4 sm:px-10">
         <div className="flex flex-col lg:flex-row justify-between items-center mb-4 space-y-4 lg:space-y-0">
           <Image src={pdhschool1} alt="Logo" className="w-auto h-12 sm:h-16" />
 
