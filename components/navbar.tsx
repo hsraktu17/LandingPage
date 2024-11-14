@@ -40,27 +40,43 @@ export default function Navbar() {
           </p>
         </Link>
         <Link to="mentors" spy={true} smooth={true} offset={50} duration={500}>
-        <p className="text-white cursor-pointer hover:text-gray-300">
-          Instructors & Mentors
-        </p>
+          <p className="text-white cursor-pointer hover:text-gray-300">
+            Instructors & Mentors
+          </p>
         </Link>
-        <Link to="curriculum" spy={true} smooth={true} offset={50} duration={500}>
-        <p className="text-white cursor-pointer hover:text-gray-300">
-          Curriculum
-        </p>
+        <Link
+          to="curriculum"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+        >
+          <p className="text-white cursor-pointer hover:text-gray-300">
+            Curriculum
+          </p>
         </Link>
-        <Link to="cohortInfo" spy={true} smooth={true} offset={50} duration={500}>
-        <p className="text-white cursor-pointer hover:text-gray-300">
-          Admission Process
-        </p>
+        <Link
+          to="cohortInfo"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={500}
+        >
+          <p className="text-white cursor-pointer hover:text-gray-300">
+            Admission Process
+          </p>
         </Link>
         <Link to="faq" spy={true} smooth={true} offset={50} duration={500}>
           <p className="text-white cursor-pointer hover:text-gray-300">FAQs</p>{" "}
         </Link>
-        <a href="https://pdhschool.notion.site/13de8b9ff79880cb8019e0da17497c4c?pvs=105" target="_blank" rel="noopener noreferrer">
-        <button className="ml-0 lg:ml-4 px-6 py-2 border-t border-b border-white text-white hover:bg-white hover:text-black transition w-full lg:w-auto mt-4 lg:mt-0">
-          Register Now
-        </button>
+        <a
+          href="https://pdhschool.notion.site/13de8b9ff79880cb8019e0da17497c4c?pvs=105"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="ml-0 lg:ml-4 px-6 py-2 border-t border-b border-white text-white hover:bg-white hover:text-black transition w-full lg:w-auto mt-4 lg:mt-0">
+            Register Now
+          </button>
         </a>
       </div>
     </div>
