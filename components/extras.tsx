@@ -45,7 +45,7 @@ export default function Extras() {
           Experience real-world startup success through hands-on learning
         </div>
       </div>
-      <div className="flex mt-8 justify-center">
+      <div className="flex mt-8 justify-center cohort-card">
         {array.map((card, index) => (
           <Card
             key={index}
@@ -67,7 +67,7 @@ interface cardProps {
 
 function Card({ img, title, description }: cardProps) {
   return (
-    <div className="bg-gray-800 rounded-lg shadow-lg p-6 m-4 w-[300px]">
+    <div className="bg-gray-800 rounded-lg shadow-lg p-6 m-4 w-[300px] card-section">
       <div className="flex items-center justify-center w-full h-48 mb-4">
         <Image
           src={img}

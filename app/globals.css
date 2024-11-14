@@ -164,6 +164,40 @@
   .cohort-info{
     padding: 0;
   }
+  .cohort-card {
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100% !important;
+  }
+  .card-section{
+    width: 100% !important;
+  }
+  .week-card{
+    flex-wrap: wrap;
+  }
+  .cohort-text1{
+    text-align: center;
+  }
+  .cohort-2-main{
+    padding-top: 20px;
+  }
+  .cohort-text2{
+    font-size: 16px;
+    text-align: center;
+  }
+  .footer-section{
+    flex-direction: row;
+    margin-top: 10px;
+  }
+  .footer-section-2{
+    flex-direction: row;
+  }
+  .footer-icons{
+    margin-top: 0 !important;
+  }
+  .mentor-text{
+    opacity: 1 !important;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 990px) {

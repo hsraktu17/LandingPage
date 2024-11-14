@@ -16,11 +16,11 @@ export default function CohortInfo() {
       {/* Centering container */}
       <div className="flex w-[1488px] min-h-[452px] gap-[25px] cohort-container">
         {/* Left Box */}
-        <div className="w-[724px] flex flex-col justify-center">
-          <h2 className="text-[36px] font-bold text-white">
+        <div className="w-[724px] flex flex-col justify-center cohort-2-main">
+          <h2 className="text-[36px] font-bold text-white cohort-text1">
             Join Cohort 2 of PDH School
           </h2>
-          <p className="mt-2 text-white text-[22px]">
+          <p className="mt-2 text-white text-[22px] cohort-text2">
             Don’t miss out on your chance to join a community of driven
             entrepreneurs and get hands-on guidance to launch your startup!
           </p>
