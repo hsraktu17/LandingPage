@@ -37,7 +37,7 @@ const array = [
 export default function Extras() {
   return (
     <div className="flex flex-col items-center justify-center text-white mt-10 px-[120px] extra-page">
-      <div className="px-6 lg:px-[120px] text-center common-container">
+      <div className="px-6  text-center common-container">
         <div className="text-[28px] lg:text-[36px] font-[600]">
           More Than Just a Cohort
         </div>
@@ -45,7 +45,7 @@ export default function Extras() {
           Experience real-world startup success through hands-on learning
         </div>
       </div>
-      <div className="flex flex-nowrap overflow-x-scroll mt-8 w-full px-4 lg:overflow-auto lg:justify-center">
+      <div className="flex flex-nowrap mt-8 w-full px-4 justify-center">
         {array.map((card, index) => (
           <Card
             key={index}
@@ -67,7 +67,7 @@ interface cardProps {
 
 function Card({ img, title, description }: cardProps) {
   return (
-    <div className="bg-gray-800 rounded-lg shadow-lg p-6 m-4 max-w-[316px] min-w-[250px]">
+    <div className="bg-gray-800 rounded-lg shadow-lg p-6 m-4 w-[300px]">
       <div className="flex items-center justify-center w-full h-48 mb-4">
         <Image
           src={img}

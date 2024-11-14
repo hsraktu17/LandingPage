@@ -40,18 +40,12 @@ const imageArray = [
     description: "Description 5",
     comingSoon: true,
   },
-  {
-    image: img7,
-    name: "Name 6",
-    description: "Description 6",
-    comingSoon: true,
-  },
 ];
 
 export default function ImageCard() {
   return (
     <div className="w-full mt-8 mb-8  overflow-x-auto">
-      <div className="grid grid-flow-col gap-6 mentor-card">
+      <div className="grid grid-flow-col gap-[15px] mentor-card">
         {imageArray.map((item, index) => (
           <DirectionAwareHover
             key={index}

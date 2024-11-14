@@ -61,7 +61,7 @@ interface cardProps {
 
 export function Card({ img, title, description }: cardProps) {
   return (
-    <div className="bg-gray-800 rounded-lg shadow-lg p-6 m-4 max-w-[316px] min-w-[250px]">
+    <div className="bg-gray-800 rounded-lg shadow-lg p-6 m-4 w-[300px]">
       <div className="flex items-center justify-center w-full h-48 mb-4">
         <Image src={img} alt={title || "Card Image"} className="rounded" />
       </div>
