@@ -12,7 +12,6 @@ import Avg from "./avgcohort";
 import FAQ from "./faq";
 import Footer from "./footer";
 import CohortInfo from "./cohortInfo";
-
 export default function FS() {
   return (
     <div className="relative w-full h-[579px]">
@@ -46,9 +45,11 @@ export default function FS() {
           <div>
             <CohortInfo />
           </div>
+        
           <div>
             <FAQ />
           </div>
+
           <div>
             <Footer />
           </div>

@@ -8,7 +8,7 @@ import {
 
 export default function FAQ() {
   return (
-    <div className="flex flex-col items-center text-white p-6 sm:p-8 md:p-16 lg:p-[120px] w-full">
+    <div className="flex flex-col items-center text-white p-6 sm:p-8 md:p-16 lg:p-[120px] w-full" id="faq">
       <div className="text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] font-semibold mb-6 text-center">
         Frequently Asked Questions
       </div>
@@ -16,28 +16,26 @@ export default function FAQ() {
         <Accordion type="single" collapsible>
           <AccordionItem value="item-1">
             <AccordionTrigger className="text-left">
-              Frequently Asked Questions 1
+              Will I get a discount?
             </AccordionTrigger>
             <AccordionContent className="text-left">
-              Yes. It adheres to the WAI-ARIA design pattern.
+            Please contact us on email
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
             <AccordionTrigger className="text-left">
-              Frequently Asked Questions 2
+            Will I have a product to be launched ready by the end of the startup?
             </AccordionTrigger>
             <AccordionContent className="text-left">
-              Yes. It comes with default styles that match the other components
-              aesthetic.
+            Yes, if you are ambitious, hard-working and follow our cohort, you will have it. 
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
             <AccordionTrigger className="text-left">
-              Frequently Asked Questions 3
+            What happens if I give in all my efforts and I don’t get my startup built?
             </AccordionTrigger>
             <AccordionContent className="text-left">
-              Yes. It@apos; s animated by default, but you can disable it if you
-              prefer.
+            You’ll get 90% of your money back by the end of one year from the start of your cohort.
             </AccordionContent>
           </AccordionItem>
         </Accordion>

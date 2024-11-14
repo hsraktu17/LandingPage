@@ -3,149 +3,148 @@
 
 import { useState } from "react";
 import CourseCards from "./courseCards";
-import ArrowDown from "../public/Arrow Download.svg";
+import ArrowDown from "../public/ArrowDownB.svg";
 import Image from "next/image";
-
 const businessCentricCourses = [
   {
     week: "Week 1",
-    title: "Ideation and Validation",
-    topics: ["Idea Generation", "Market Research", "Customer Discovery"],
-    workshops: ["Design Thinking", "Lean Startup", "MVP Creation"],
-    assignments: ["Conduct user interviews", "Craft a value proposition"],
+    title: "Spark the Vision",
+    topics: ["Brand Identity", "Market Research", "Value Proposition"],
+    workshops: ["Brand Storytelling", "Logo Design", "Messaging Framework"],
+    assignments: [
+      "Conduct market research",
+      "Craft your brand story",
+      "Develop brand guidelines",
+    ],
   },
   {
     week: "Week 2",
-    title: "Business Model Development",
-    topics: ["Value Proposition", "Revenue Streams", "Cost Structure"],
-    workshops: ["Business Model Canvas", "Revenue Planning", "Cost Analysis"],
-    assignments: ["Create a business model", "Identify key revenue streams"],
+    title: "Build Your Online Home",
+    topics: ["Online Presence", "Landing Page Optimization", "SEO Essentials"],
+    workshops: ["Website Design", "Content Creation", "Keyword Research"],
+    assignments: [
+      "Create a landing page",
+      "Structure your website",
+      "Apply SEO strategies",
+    ],
   },
   {
     week: "Week 3",
-    title: "Market Strategy",
-    topics: ["Target Market", "Competitor Analysis", "Marketing Channels"],
-    workshops: [
-      "Market Research Techniques",
-      "Competitor Mapping",
-      "Marketing Strategies",
+    title: "Ignite Your Sales Engine",
+    topics: ["Sales Fundamentals", "Lead Generation", "Negotiation Skills"],
+    workshops: ["Sales Pitches", "Lead Nurturing", "Social Media Strategies"],
+    assignments: [
+      "Develop marketing campaigns",
+      "Craft a sales pitch",
+      "Launch a lead-generation initiative",
     ],
-    assignments: ["Develop a market strategy", "Identify competitors"],
   },
   {
     week: "Week 4",
-    title: "Product Development",
-    topics: ["Prototyping", "User Feedback", "Iteration"],
-    workshops: ["Product Prototyping", "User Testing", "Iteration Techniques"],
-    assignments: ["Create a product prototype", "Collect user feedback"],
+    title: "Delivering Value",
+    topics: ["Customer Experience", "Workflow Optimization", "Relationship Management"],
+    workshops: [
+      "Customer Support Strategies",
+      "Loyalty Program Design",
+      "Operations Efficiency",
+    ],
+    assignments: [
+      "Streamline workflows",
+      "Resolve customer issues",
+      "Build a loyalty program",
+    ],
   },
   {
     week: "Week 5",
-    title: "Financial Planning",
-    topics: ["Budgeting", "Financial Forecasting", "Break-even Analysis"],
-    workshops: [
-      "Financial Planning",
-      "Budget Management",
-      "Investment Analysis",
+    title: "Fueling Growth",
+    topics: ["Financial Metrics", "Data-Driven Decisions", "Team Leadership"],
+    workshops: ["KPI Tracking", "Financial Modeling", "Collaborative Tools"],
+    assignments: [
+      "Track key metrics",
+      "Develop financial projections",
+      "Outline team-building strategies",
     ],
-    assignments: ["Draft a financial plan", "Perform break-even analysis"],
   },
   {
     week: "Week 6",
-    title: "Pitch Preparation",
-    topics: ["Creating a Pitch", "Storytelling", "Investor Q&A"],
-    workshops: ["Pitch Deck Creation", "Public Speaking", "Investor Handling"],
-    assignments: ["Prepare a pitch deck", "Practice investor Q&A"],
+    title: "Scaling Your Vision",
+    topics: ["Growth Hacking", "Business Diversification", "Strategic Planning"],
+    workshops: ["Viral Marketing", "Expansion Strategies", "Revenue Stream Innovation"],
+    assignments: [
+      "Plan growth initiatives",
+      "Identify new opportunities",
+      "Craft a long-term vision",
+    ],
   },
 ];
+
 
 const techCentricCourses = [
   {
     week: "Week 1",
-    title: "Technical Foundations",
-    topics: [
-      "Introduction to Programming",
-      "Basic Algorithms",
-      "Data Structures",
+    title: "Spark the Innovation",
+    topics: ["Product Vision", "Development Environment", "Prototyping Basics"],
+    workshops: ["Ideation", "Market Research", "Tech Stack Selection"],
+    assignments: [
+      "Define your product roadmap",
+      "Set up tools",
+      "Build MVP features",
     ],
-    workshops: [
-      "Hands-on Coding",
-      "Algorithm Design",
-      "Data Structure Implementation",
-    ],
-    assignments: ["Solve coding exercises", "Build a simple project"],
   },
   {
     week: "Week 2",
-    title: "Advanced Algorithms",
-    topics: [
-      "Sorting and Searching",
-      "Dynamic Programming",
-      "Graph Algorithms",
-    ],
-    workshops: [
-      "Advanced Problem Solving",
-      "Dynamic Programming Techniques",
-      "Graph Theory",
-    ],
+    title: "Engineer the Foundation",
+    topics: ["AI Integration", "API Utilization", "Security Practices"],
+    workshops: ["AI/ML Exploration", "API Integration", "Data Protection"],
     assignments: [
-      "Complete advanced algorithm problems",
-      "Optimize solutions for efficiency",
+      "Integrate AI functionalities",
+      "Connect APIs",
+      "Implement security measures",
     ],
   },
   {
     week: "Week 3",
-    title: "System Design",
-    topics: ["High-Level Design", "Scalability", "Microservices"],
-    workshops: [
-      "System Design Principles",
-      "Scalability Workshops",
-      "Microservice Architecture",
-    ],
+    title: "Engage Early Adopters",
+    topics: ["Beta Testing", "User Feedback", "Data Analysis"],
+    workshops: ["Onboarding", "Survey Design", "A/B Testing"],
     assignments: [
-      "Design a scalable system",
-      "Create a system architecture diagram",
+      "Launch beta version",
+      "Collect feedback",
+      "Iterate product features",
     ],
   },
   {
     week: "Week 4",
-    title: "Database Management",
-    topics: ["SQL vs NoSQL", "Database Optimization", "Data Modeling"],
-    workshops: [
-      "Database Query Optimization",
-      "NoSQL Use Cases",
-      "Data Modeling Techniques",
-    ],
+    title: "Refine and Optimize",
+    topics: ["Code Quality", "Performance Tuning", "UX Enhancements"],
+    workshops: ["Code Refactoring", "Speed Optimization", "Usability Testing"],
     assignments: [
-      "Optimize a database schema",
-      "Compare SQL and NoSQL solutions",
+      "Refactor codebase",
+      "Optimize performance",
+      "Implement UX improvements",
     ],
   },
   {
     week: "Week 5",
-    title: "Cloud Computing",
-    topics: ["AWS Overview", "Azure Services", "Cloud Architecture"],
-    workshops: [
-      "AWS Hands-on Lab",
-      "Azure Cloud Setup",
-      "Cloud Service Integration",
+    title: "Automate & Streamline",
+    topics: ["CI/CD Pipelines", "Agile Methodologies", "Automated Testing"],
+    workshops: ["Pipeline Configuration", "Testing Frameworks", "Sprint Planning"],
+    assignments: [
+      "Set up CI/CD",
+      "Automate tests",
+      "Adopt agile sprints",
     ],
-    assignments: ["Set up a cloud service", "Deploy an application on AWS"],
   },
   {
     week: "Week 6",
-    title: "DevOps and Deployment",
-    topics: [
-      "CI/CD Pipelines",
-      "Docker and Kubernetes",
-      "Deployment Strategies",
+    title: "Prepare for Launch",
+    topics: ["Deployment Strategies", "Community Building", "Monitoring Tools"],
+    workshops: ["Launch Planning", "Marketing Initiatives", "Error Tracking"],
+    assignments: [
+      "Deploy final product",
+      "Execute launch plan",
+      "Engage user community",
     ],
-    workshops: [
-      "CI/CD Implementation",
-      "Containerization with Docker",
-      "Kubernetes Basics",
-    ],
-    assignments: ["Create a CI/CD pipeline", "Deploy a containerized app"],
   },
 ];
 
@@ -153,7 +152,7 @@ export default function Path() {
   const [isBusinessCentric, setIsBusinessCentric] = useState(true);
 
   return (
-    <div className="text-white py-[38px] px-[10%] sm:px-[10px] flex flex-col items-center justify-center main-container">
+    <div className="text-white py-[38px] px-[10%] sm:px-[10px] flex flex-col items-center justify-center main-container" id="curriculum">
       <div className="text-[36px] font-[600] max-w-4xl text-center mb-8">
         Choose the path that best aligns with your goals
       </div>
@@ -170,7 +169,7 @@ export default function Path() {
             Business-Centric
           </div>
           <div className="text-[10px] sm:text-[16px] font-normal">
-            For aspiring entrepreneurs
+            Idea to Impact
           </div>
         </button>
         <button
@@ -185,7 +184,7 @@ export default function Path() {
             Tech-Centric
           </div>
           <div className="text-[10px] sm:text-[16px] font-normal">
-            For aspiring tech experts
+            Code to Reality
           </div>
         </button>
       </div>
@@ -234,8 +233,10 @@ export default function Path() {
               />
             ))}
       </div>
-      <button className=" ml-20 py-3 flex sm:py-3.5 md:py-4 px-6 sm:px-8 md:px-10 border-t border-b border-white text-white hover:bg-white hover:text-black transition w-full sm:w-96 download-carriculam2">
-        Download Detailed Cariculam{" "}
+      <button className=" ml-20 py-3 flex sm:py-3.5 md:py-4  pl-16 bg-white text-black transition w-full sm:w-96 download-carriculam2">
+      <a href="/PDH School _ Brochure [Cohort 2].pdf" download>
+        Download Detailed Curriculum{" "}
+        </a>
         <Image src={ArrowDown} alt="Arrow Down" className="ml-2 " />
       </button>
     </div>

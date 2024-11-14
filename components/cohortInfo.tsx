@@ -9,7 +9,7 @@ import arrowRight from "@/public/Arrow Right.svg";
 import Image from "next/image";
 export default function CohortInfo() {
   return (
-    <div className="flex items-center justify-center bg-[#00000066] h-[692px] cohort-main">
+    <div className="flex items-center justify-center bg-[#00000066] h-[692px] cohort-main" id="cohortInfo">
       {/* Centering container */}
       <div className="flex w-[1488px] min-h-[452px] gap-[96px] cohort-container">
         {/* Left Box */}
@@ -32,7 +32,7 @@ export default function CohortInfo() {
             <div className="text-lg text-white">
               Cost <br />
               <div className="font-[600]">
-                INR 20,000{" "}
+                INR 25,000{" "}
                 <span className="line-through ml-2 font-[400] text-[14px]">
                   INR 75,000
                 </span>
@@ -48,20 +48,17 @@ export default function CohortInfo() {
                     </div>
                  {/* Replace with your arrow icon */}
                   </AccordionTrigger>
-                  <AccordionContent className="text-left accordion-content">
-                    Yes. It adheres to 
+                  <AccordionContent className="text-left accordion-content flex justify-between text-xl font-bold">
+                  <span>Until Nov 20</span> <span>INR 25000</span>
                   </AccordionContent>
-                  <AccordionContent className="text-left accordion-content">
-                    Yes. It adheres to 
+                  <AccordionContent className="text-left accordion-content flex justify-between text-xl font-bold">
+                  <span>Until Nov 30</span> <span>INR 30000</span>
                   </AccordionContent>
-                  <AccordionContent className="text-left accordion-content">
-                    Yes. It adheres to
+                  <AccordionContent className="text-left accordion-content flex justify-between text-xl font-bold">
+                  <span>Until Dec 15</span> <span>INR 50000</span>
                   </AccordionContent>
-                  <AccordionContent className="text-left accordion-content">
-                    Yes. It adheres to 
-                  </AccordionContent>
-                  <AccordionContent className="text-left accordion-content">
-                    Yes. It adheres to
+                  <AccordionContent className="text-left accordion-content flex justify-between text-xl font-bold">
+                  <span>Until Dec 30</span> <span>INR 75000 </span>
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
@@ -69,10 +66,12 @@ export default function CohortInfo() {
           </div>
 
           <div className="w-full h-auto p-8 flex flex-col gap-4 bg-[#00000033]">
+          <a href="https://pdhschool.notion.site/13de8b9ff79880cb8019e0da17497c4c?pvs=105" target="_blank" rel="noopener noreferrer">
             <button className="bg-white w-full py-4 px-4 text-black text-[19px] font-bold hover:bg-gray-200 flex justify-between items-center">
               Be an Early Bird – Apply Now
               <Image src={arrowRight} alt="Right" />
             </button>
+            </a>
             <div className="text-white text-xs">
               Only 30 seats available – don’t miss out!
             </div>

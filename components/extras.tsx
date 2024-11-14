@@ -10,7 +10,7 @@ import img4 from "@/public/Layer_1 (3).svg";
 const array = [
   {
     img: img1,
-    title: "",
+    title: "Hands-on Learning",
     description:
       "Apply theories and build your startup in real-time through practical challenges.",
   },

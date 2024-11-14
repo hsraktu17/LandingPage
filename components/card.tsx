@@ -17,29 +17,32 @@ function Card({ heading, subHeading }: CardProps) {
     </div>
   );
 }
-
 const cardContent = [
   {
-    heading: "Hybrid",
-    subHeading: "1 day in-person in Bangalore & 5 days online",
+    heading: "Sessions",
+    subHeading: "With experienced founders, investors, & mentors",
   },
   {
-    heading: "1-on-1 Sessions",
-    subHeading: "With experienced founders, investors, & mentors",
+    heading: "Hybrid",
+    subHeading: "5 days a week online sessions with a destination graduation",
+  },
+  {
+    heading: "Success Partner",
+    subHeading: "A buddy for course and after the course",
   },
   {
     heading: "Community",
     subHeading: "of future partners, investors, and successful alumni",
   },
   {
-    heading: "1 Year",
-    subHeading: "of support to ensure continued progress",
+    heading: "AI toolkit",
+    subHeading: "with a collection of new-gen no-code tools",
   },
 ];
 
 export default function Cards() {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 card-content">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-6 card-content">
       {cardContent.map((card, index) => (
         <Card key={index} heading={card.heading} subHeading={card.subHeading} />
       ))}

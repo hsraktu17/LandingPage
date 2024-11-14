@@ -1,25 +1,31 @@
 import Image from "next/image";
 import React from "react";
-
-import img1 from "@/public/image 1.svg";
-import img2 from "@/public/image 2.svg";
-import img3 from "@/public/image 3.svg";
+import img4 from "@/public/Layer_1_.svg";
+import img1 from "@/public/Group 7.svg";
+import img2 from "@/public/Group 8.svg";
+import img3 from "@/public/Group 9.svg";
 
 const array = [
   {
     img: img1,
-    title: "Ongoing Mentorship",
-    description: "Continued guidance as you navigate early-stage challenges.",
+    title: "Incubation at PDH Ventures",
+    description: "Get your start-up incubated at PDH Ventures as Alumni at no-cost.",
   },
   {
     img: img2,
-    title: "Exclusive Resources",
+    title: "Regular Advisory",
     description:
-      "Access to templates, tools, and a network of fellow founders.",
+      "Continued guidance as you navigate early-stage challenges.",
   },
   {
     img: img3,
-    title: "Alumni Community",
+    title: "Startup Management System  ",
+    description:
+      "Access to our all-purpose work operating system.",
+  },
+  {
+    img: img4,
+    title: "Alumni Partnerships ",
     description:
       "Join a growing community of PDH School alumni dedicated to mutual support and growth.",
   },
@@ -36,13 +42,17 @@ export default function Week() {
       </div>
       <div className="flex flex-wrap justify-center mt-8">
         {array.map((card, index) => (
+        
           <Card
             key={index}
             img={card.img}
             title={card.title}
             description={card.description}
           />
+       
+          
         ))}
+        
       </div>
     </div>
   );
@@ -56,7 +66,7 @@ interface cardProps {
 
 export function Card({ img, title, description }: cardProps) {
   return (
-    <div className="bg-gray-800 rounded-lg shadow-lg p-6 m-4 max-w-sm">
+    <div className="bg-gray-800 rounded-lg shadow-lg p-6 m-4 max-w-[348px] min-w-[250px]">
       <div className="flex items-center justify-center w-full h-48 mb-4">
         <Image src={img} alt={title || "Card Image"} className="rounded" />
       </div>
