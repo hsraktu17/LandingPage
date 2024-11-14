@@ -15,9 +15,11 @@ export default function Hero() {
         </div>
       </div>
       <div className="text-center flex flex-wrap md:text-left hero-buttons">
+      <a href="https://pdhschool.notion.site/13de8b9ff79880cb8019e0da17497c4c?pvs=105" target="_blank" rel="noopener noreferrer">
         <button className="bg-white py-3 sm:py-3.5 md:py-4 px-6 sm:px-8 md:px-10 text-black w-full sm:w-96 font-medium hover:bg-gray-200 transition">
           Apply Now
         </button>
+        </a>
         <a href="/PDH School _ Brochure [Cohort 2].pdf" download>
         <button className=" ml-20 py-3 flex sm:py-3.5 md:py-4 px-6 sm:px-8 md:px-10 border-t border-b border-white text-white hover:bg-white hover:text-black transition w-full sm:w-96 download-carriculam">
           Download  Detailed Curriculum  <Image src={ArrowDown} alt="Arrow Down" className="ml-2 "  />

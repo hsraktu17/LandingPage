@@ -32,7 +32,7 @@ export default function CohortInfo() {
             <div className="text-lg text-white">
               Cost <br />
               <div className="font-[600]">
-                INR 20,000{" "}
+                INR 25,000{" "}
                 <span className="line-through ml-2 font-[400] text-[14px]">
                   INR 75,000
                 </span>
@@ -66,10 +66,12 @@ export default function CohortInfo() {
           </div>
 
           <div className="w-full h-auto p-8 flex flex-col gap-4 bg-[#00000033]">
+          <a href="https://pdhschool.notion.site/13de8b9ff79880cb8019e0da17497c4c?pvs=105" target="_blank" rel="noopener noreferrer">
             <button className="bg-white w-full py-4 px-4 text-black text-[19px] font-bold hover:bg-gray-200 flex justify-between items-center">
               Be an Early Bird – Apply Now
               <Image src={arrowRight} alt="Right" />
             </button>
+            </a>
             <div className="text-white text-xs">
               Only 30 seats available – don’t miss out!
             </div>

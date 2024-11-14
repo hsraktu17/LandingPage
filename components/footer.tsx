@@ -1,8 +1,6 @@
 import img from "@/public/Pexels Photo by cottonbro studio.png";
 import pdhschool1 from "@/public/Group 4.png";
-import twitter from "@/public/x.svg";
 import linkedin from "@/public/linkedin.svg";
-import facebook from "@/public/facebook.svg";
 import Image from "next/image";
 import { FaInstagram } from "react-icons/fa";
 
@@ -19,10 +17,21 @@ export default function Footer() {
           Join our community for the latest updates and insights.
         </p>
         <div className="flex space-x-4 mb-6">
-          <button className="bg-white py-[12px] md:py-[16px] px-[20px] md:px-[24px] text-black">
-            Apply Now
-          </button>
-          <button className="bg-transparent border-t border-b border-white text-white hover:bg-white hover:text-black transition font-semibold py-2 px-4 ">
+          <a
+            href="https://pdhschool.notion.site/13de8b9ff79880cb8019e0da17497c4c?pvs=105"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="bg-white py-[12px] md:py-[16px] px-[20px] md:px-[24px] text-black">
+              Apply Now
+            </button>
+          </a>
+          <button
+            className="bg-transparent border-t border-b border-white text-white hover:bg-white hover:text-black transition font-semibold py-2 px-4"
+            onClick={() =>
+              (window.location.href = "mailto:team@projejectdark.horse")
+            }
+          >
             Contact Us
           </button>
         </div>
@@ -32,18 +41,27 @@ export default function Footer() {
           <Image src={pdhschool1} alt="Logo" className="w-auto h-12 sm:h-16" />
 
           <div className="flex space-x-4 items-center">
-         <a href="https://www.instagram.com/pdhschool/profilecard/?igsh=MW93Y21udXE2eW9vdw==" target="_blank">  <FaInstagram size={30}  className="text-white"/></a>
-            <Image src={twitter} alt="twitter" className="h-12 w-12" />
-            <a href="https://www.linkedin.com/company/project-dark-horse-school/" target="_blank"> 
-            <Image src={linkedin} alt="linkedin" className="h-12 w-12" />
+            <a
+              href="https://www.instagram.com/pdhschool/profilecard/?igsh=MW93Y21udXE2eW9vdw=="
+              target="_blank"
+            >
+              {" "}
+              <FaInstagram size={30} className="text-white" />
+            </a>
+            {/* <Image src={twitter} alt="twitter" className="h-12 w-12" /> */}
+            <a
+              href="https://www.linkedin.com/company/project-dark-horse-school/"
+              target="_blank"
+            >
+              <Image src={linkedin} alt="linkedin" className="h-12 w-12" />
             </a>
           </div>
         </div>
 
         {/* Privacy Policy and Terms of Use */}
         <div className="flex flex-col lg:flex-row justify-center text-white lg:justify-end gap-4 mt-1 text-center lg:text-left">
-          <p>Privacy Policy</p>
-          <p>Terms of Use</p>
+          <p className="cursor-pointer">Privacy Policy</p>
+          <p className="cursor-pointer">Terms of Use</p>
         </div>
 
         {/* Footer Text */}
