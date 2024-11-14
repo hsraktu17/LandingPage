@@ -33,7 +33,7 @@ const array = [
 
 export default function Week() {
   return (
-    <div className="flex flex-col items-center justify-center text-white p-[120px] common-container">
+    <div className="flex flex-col items-center justify-center text-white p-[120px] common-container px-[120px]">
       <div className="text-[36px] font-[600] mb-2 text-center">
         Beyond the 6-Week Program
       </div>
@@ -66,7 +66,7 @@ interface cardProps {
 
 export function Card({ img, title, description }: cardProps) {
   return (
-    <div className="bg-gray-800 rounded-lg shadow-lg p-6 m-4 max-w-[348px] min-w-[250px]">
+    <div className="bg-gray-800 rounded-lg shadow-lg p-6 m-4 max-w-[316px] min-w-[250px]">
       <div className="flex items-center justify-center w-full h-48 mb-4">
         <Image src={img} alt={title || "Card Image"} className="rounded" />
       </div>

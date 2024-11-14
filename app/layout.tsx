@@ -1,10 +1,13 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { Viewport } from "next";
 
 export const viewport: Viewport = {
   themeColor: "black",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 };
 
 const geistSans = localFont({
@@ -49,14 +52,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <meta
-          name="viewport"
-          content="width=device-width,
-          initial-scale=1.0"
-        />
-        <meta name="theme-color" content="black" />
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#101820]`}
       >

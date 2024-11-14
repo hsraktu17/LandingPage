@@ -9,7 +9,7 @@ import arrowRight from "@/public/Arrow Right.svg";
 import Image from "next/image";
 export default function CohortInfo() {
   return (
-    <div className="flex items-center justify-center bg-[#00000066] h-[692px] cohort-main" id="cohortInfo">
+    <div className="flex items-center justify-center bg-[#00000066] h-[692px] cohort-main px-[120px] cohort-info" id="cohortInfo">
       {/* Centering container */}
       <div className="flex w-[1488px] min-h-[452px] gap-[96px] cohort-container">
         {/* Left Box */}
