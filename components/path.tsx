@@ -3,8 +3,9 @@
 
 import { useState } from "react";
 import CourseCards from "./courseCards";
-import ArrowDown from "../public/ArrowDownB.svg";
-import Image from "next/image";
+// import ArrowDown from "../public/ArrowDownB.svg";
+// import Image from "next/image";
+
 const businessCentricCourses = [
   {
     week: "Week 1",
@@ -233,11 +234,11 @@ export default function Path() {
               />
             ))}
       </div>
-      <button className=" ml-20 py-3 flex sm:py-3.5 md:py-4  pl-16 bg-white text-black transition w-full sm:w-96 download-carriculam2">
-      <a href="/PDH School _ Brochure [Cohort 2].pdf" download>
-        Download Detailed Curriculum{" "}
+      <button className=" ml-20 py-3 items-center flex sm:py-3.5 md:py-4  pl-16 bg-white text-black transition w-full sm:w-96 download-carriculam2">
+      <a href="https://pdhschool.notion.site/School-of-Project-Dark-Horse-13ee8b9ff7988058bf65c189d5bd114d" target="_blank" className="text-xl">
+        Link To Detailed Curriculum{" "}
         </a>
-        <Image src={ArrowDown} alt="Arrow Down" className="ml-2 " />
+      
       </button>
     </div>
   );

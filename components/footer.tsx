@@ -2,7 +2,7 @@ import img from "@/public/Pexels Photo by cottonbro studio.png";
 import pdhschool1 from "@/public/Group 4.png";
 import linkedin from "@/public/linkedin.svg";
 import Image from "next/image";
-import { FaInstagram } from "react-icons/fa";
+import { FaInstagram, FaYoutube } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -41,6 +41,13 @@ export default function Footer() {
           <Image src={pdhschool1} alt="Logo" className="w-auto h-12 sm:h-16" />
 
           <div className="flex space-x-4 items-center footer-icons">
+          <a
+              href="https://www.youtube.com/@PDHSchool"
+              target="_blank"
+            >
+              {" "}
+              <FaYoutube size={34} className="text-white" />
+            </a>
             <a
               href="https://www.instagram.com/pdhschool/profilecard/?igsh=MW93Y21udXE2eW9vdw=="
               target="_blank"
@@ -53,7 +60,7 @@ export default function Footer() {
               href="https://www.linkedin.com/company/project-dark-horse-school/"
               target="_blank"
             >
-              <Image src={linkedin} alt="linkedin" className="h-12 w-12" />
+              <Image src={linkedin} alt="linkedin" className="" />
             </a>
           </div>
         </div>
