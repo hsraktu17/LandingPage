@@ -48,7 +48,7 @@ export default function CohortInfo() {
                     <div className="flex items-center">
                       <Image src={infoIcon} alt="Info" className="h-10" />
                       <span className="ml-2 text-[18px]">
-                        Price increase from 15 Nov 11:59 PM
+                        Price increase from 20 Nov 11:59 PM
                       </span>
                     </div>
                     {/* Replace with your arrow icon */}

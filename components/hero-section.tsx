@@ -1,7 +1,4 @@
 import Cards from "./card";
-import ArrowDown from '../public/Arrow Download.svg'
-import Image from "next/image";
-
 export default function Hero() {
   return (
     <div className="text-white px-4 sm:px-6 md:px-[60px] lg:px-[120px] py-6 md:py-10 lg:py-[60px] space-y-6 md:space-y-8 lg:space-y-[64px]" id="hero">
@@ -20,9 +17,9 @@ export default function Hero() {
           Apply Now
         </button>
         </a>
-        <a href="/PDH School _ Brochure [Cohort 2].pdf" download>
-        <button className=" ml-20 py-3 flex sm:py-3.5 md:py-4 px-6 sm:px-8 md:px-10 border-t border-b border-white text-white hover:bg-white hover:text-black transition w-full sm:w-96 download-carriculam">
-          Download  Detailed Curriculum  <Image src={ArrowDown} alt="Arrow Down" className="ml-2 "  />
+        <a href="https://pdhschool.notion.site/School-of-Project-Dark-Horse-13ee8b9ff7988058bf65c189d5bd114d" target="_blank">
+        <button className=" ml-20 py-3 flex sm:py-3.5 md:py-4 border-t border-b border-white text-white hover:bg-white hover:text-black transition w-full text-center download-carriculam">
+        Link To Detailed Curriculum 
         </button>
         </a>
       </div>
