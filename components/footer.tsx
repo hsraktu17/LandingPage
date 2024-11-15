@@ -37,7 +37,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="mt-20 footer-bottom w-full px-4 sm:px-10">
-        <div className="flex flex-col  justify-between items-center mb-4 space-y-4 lg:space-y-0 footer-section">
+        <div className="flex justify-between items-center mb-4 space-y-4 lg:space-y-0 footer-section">
           <Image src={pdhschool1} alt="Logo" className="w-auto h-12 sm:h-16" />
 
           <div className="flex space-x-4 items-center footer-icons">
