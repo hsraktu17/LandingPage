@@ -211,7 +211,7 @@ export default function Path() {
           </>
         )}
       </div>
-      <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-[72px] business-card">
+      <div className="mt-8 flex overflow-x-scroll w-full gap-4 sm:gap-[72px] pl-[120px] business-card">
         {isBusinessCentric
           ? businessCentricCourses.map((course, index) => (
               <CourseCards

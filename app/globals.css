@@ -371,3 +371,6 @@
   gap: 8px;
 }
 
+.overflow-x-scroll {
+  scrollbar-width: none;
+}
