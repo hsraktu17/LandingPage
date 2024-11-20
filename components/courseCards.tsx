@@ -16,8 +16,8 @@ export default function CourseCards({
   assignments,
 }: CourseCardsProps) {
   return (
-    <div className="text-white">
-      <div className=" course-card max-w-[750px] h-auto flex flex-col md:flex-row bg-[#282F36] rounded-lg overflow-hidden mb-6">
+    <div className="text-white "  >
+      <div className=" course-card w-[750px] max-w-[750px] h-auto flex flex-col md:flex-row bg-[#282F36] rounded-lg overflow-hidden mb-6">
         {/* Left section */}
         <div className="bg-[#282F36] p-[16px] md:p-[32px] w-full md:w-[330px] text-left flex flex-col justify-between">
           <div className="text-[20px] md:text-[24px] font-[600] mb-4">{week}</div>

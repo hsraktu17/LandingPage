@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 
-import img1 from "@/public/Layer_1.svg";
-import img2 from "@/public/Layer_1 (1).svg";
+import img1 from "@/public/hands_on_learning.svg";
+import img2 from "@/public/feedback.svg";
 import img3 from "@/public/Layer_1 (2).svg";
 import img4 from "@/public/Layer_1 (3).svg";
 
@@ -36,7 +36,7 @@ const array = [
 
 export default function Extras() {
   return (
-    <div className="flex flex-col items-center justify-center text-white mt-10 px-[120px] extra-page">
+    <div className="flex flex-col items-center justify-center text-white p-[120px] extra-page">
       <div className="px-6  text-center common-container">
         <div className="text-[28px] lg:text-[36px] font-[600]">
           More Than Just a Cohort
@@ -67,8 +67,8 @@ interface cardProps {
 
 function Card({ img, title, description }: cardProps) {
   return (
-    <div className="bg-gray-800 rounded-lg shadow-lg p-6 m-4 w-[300px] card-section">
-      <div className="flex items-center justify-center w-full h-48 mb-4">
+    <div className="bg-gray-800 rounded-lg shadow-lg p-8 m-4 w-[300px] card-section">
+      <div className="flex items-center justify-left w-full h-48 mb-4">
         <Image
           src={img}
           alt={title || "Card Image"}
@@ -78,11 +78,11 @@ function Card({ img, title, description }: cardProps) {
         />
       </div>
       {title && (
-        <div className="text-[20px] lg:text-[24px] font-[600] mb-2 text-center">
+        <div className="text-[20px] lg:text-[24px] font-[600] mb-2 text-left">
           {title}
         </div>
       )}
-      <div className="text-[14px] lg:text-[16px] font-[400] text-center">
+      <div className="text-[14px] lg:text-[16px] font-[400] text-left">
         {description}
       </div>
     </div>
