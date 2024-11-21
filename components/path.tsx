@@ -234,7 +234,7 @@ export default function Path() {
               />
             ))}
       </div>
-      <button className=" ml-20 py-3 items-center flex sm:py-3.5 md:py-4  pl-16 bg-white text-black transition w-full sm:w-96 download-carriculam2">
+      <button className=" ml-20 py-3 items-center flex mt-5 sm:py-3.5 md:py-4  pl-16 bg-white text-black transition w-full sm:w-96 download-carriculam2">
       <a href="https://pdhschool.notion.site/School-of-Project-Dark-Horse-13ee8b9ff7988058bf65c189d5bd114d" target="_blank" className="text-xl">
         Link To Detailed Curriculum{" "}
         </a>

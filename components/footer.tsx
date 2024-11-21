@@ -1,5 +1,5 @@
 import img from "@/public/Pexels Photo by cottonbro studio.png";
-import pdhschool1 from "@/public/Group 4.png";
+import pdhschool1 from "@/public/Group 19.svg";
 import linkedin from "@/public/linkedin.svg";
 import Image from "next/image";
 import { FaInstagram, FaYoutube } from "react-icons/fa";
