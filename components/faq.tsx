@@ -13,7 +13,7 @@ export default function FAQ() {
         Frequently Asked Questions
       </div>
       <div className="w-full sm:w-11/12 md:w-screen max-w-7xl mt-8 text-[16px] sm:text-[18px] md:text-[20px]">
-        <Accordion type="single" collapsible>
+        <Accordion type="single" collapsible className="w-[1080px] mx-auto accordian-container">
           <AccordionItem value="item-1">
             <AccordionTrigger className="text-left">
               Will I get a discount?

@@ -67,7 +67,6 @@
 
 /* Mobile screens (max-width: 576px) */
 @media screen and (max-width: 576px) {
-  
   .card-content {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -111,16 +110,22 @@
   }
   .program-container {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 0;
     gap: 0;
+  }
+  .accordian-container{
+    width: 100%;
   }
   .program-container-card {
     margin: 10px;
+
   }
   .overflow-x-scroll {
     scrollbar-width: 0;
   }
   .download-carriculam {
     margin-left: 0;
+    width: 100%;
     padding-left: 90px;
     margin-top: 10px;
   }
@@ -155,13 +160,15 @@
     padding-right: 10px;
     flex-wrap: wrap;
   }
-  .main-container, .extra-page, .mentors-page{
+  .main-container,
+  .extra-page,
+  .mentors-page {
     padding: 0;
   }
   .cohort-accordion {
     width: 100%;
   }
-  .cohort-info{
+  .cohort-info {
     padding: 0;
   }
   .cohort-card {
@@ -169,33 +176,33 @@
     height: 100%;
     width: 100% !important;
   }
-  .card-section{
+  .card-section {
     width: 100% !important;
   }
-  .week-card{
+  .week-card {
     flex-wrap: wrap;
   }
-  .cohort-text1{
+  .cohort-text1 {
     text-align: center;
   }
-  .cohort-2-main{
+  .cohort-2-main {
     padding-top: 20px;
   }
-  .cohort-text2{
+  .cohort-text2 {
     font-size: 16px;
     text-align: center;
   }
-  .footer-section{
+  .footer-section {
     flex-direction: row;
     margin-top: 10px;
   }
-  .footer-section-2{
+  .footer-section-2 {
     flex-direction: row;
   }
-  .footer-icons{
+  .footer-icons {
     margin-top: 0 !important;
   }
-  .mentor-text{
+  .mentor-text {
     opacity: 1 !important;
   }
 }
@@ -224,6 +231,9 @@
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .extra-page{
+    padding: 0 !important;  
+  }
   .business-centric-button button {
     height: 80px;
     width: 100%;
@@ -235,8 +245,13 @@
   .hero-buttons a {
     width: 100%;
   }
+  .accordian-container{
+    width: 100%;
+  }
+
   .download-carriculam {
     margin-left: 0;
+    width: 100%;
     padding-left: 230px !important;
     margin-top: 20px;
   }
@@ -273,9 +288,7 @@
   .business-card {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .download-carriculam {
-    padding-left: 70px !important;
-  }
+
 }
 .accordion-content {
   padding: 10px 16px;
@@ -310,7 +323,7 @@
 .swiper-slide {
   text-align: center;
   font-size: 18px;
- background-color: #282F36;
+  background-color: #282f36;
   color: #000;
   height: 631px !important;
   display: flex;
@@ -319,9 +332,8 @@
   box-shadow: 0 0 20px #00000036;
   border-radius: 10px;
   margin: 0 10px;
-
 }
-.slide-image{
+.slide-image {
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
 }
@@ -348,7 +360,7 @@
   z-index: 50;
 }
 .swiper-slide {
-  transform: translateZ(-50px) scale(0.8); 
+  transform: translateZ(-50px) scale(0.8);
   transition: transform 0.5s ease;
 }
 
@@ -356,16 +368,16 @@
   transform: translateZ(0) scale(1);
 }
 .upper-part {
-  height: 406.31px; 
-  position: relative; 
-  overflow: hidden; 
+  height: 406.31px;
+  position: relative;
+  overflow: hidden;
 }
 
 .lower-part {
-  height: auto; 
+  height: auto;
   padding: 29.81px 0;
   display: flex;
-  background-color: #282F36;
+  background-color: #282f36;
   color: white;
   flex-direction: column;
   gap: 8px;
@@ -373,4 +385,39 @@
 
 .overflow-x-scroll {
   scrollbar-width: none;
+}
+.button {
+  background-color: white;
+  color: black; 
+  transition: background-color 1s ease, color 1s ease, transform 1s ease;
+  transform: scale(1); 
+}
+
+.button:hover {
+  background-color: transparent !important; 
+  color: white !important;
+  transform: scale(1.05);
+}
+.business-card{
+  scrollbar-width: none;
+}
+.card-section {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-section:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.border-button {
+ 
+
+  transition: background-color 0.5s ease, transform 0.5s ease; 
+}
+
+.border-button:hover {
+  background-color: rgb(40 47 54 / var(--tw-bg-opacity)); 
+  color: white; 
+  transform: scale(1.05);
 }

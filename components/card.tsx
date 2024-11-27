@@ -1,4 +1,4 @@
-"use client";
+import useHoverPosition from "@/hooks/useHoverPosition";
 
 interface CardProps {
   heading: string;
@@ -6,8 +6,19 @@ interface CardProps {
 }
 
 function Card({ heading, subHeading }: CardProps) {
+  const { hoverPosition, handleMouseMove, resetHoverPosition } = useHoverPosition();
+
   return (
-    <div className="p-6 bg-gray-800 text-white shadow-md w-full h-auto mb-4">
+    <div
+      className="relative p-6 bg-gray-900 text-white shadow-md w-full h-auto mb-4 cursor-default transition-transform duration-200 ease-in-out transform hover:scale-105"
+      onMouseMove={handleMouseMove}
+      onMouseLeave={resetHoverPosition}
+      style={{
+        background: hoverPosition
+          ? `radial-gradient(circle at ${hoverPosition.x}px ${hoverPosition.y}px, rgba(55, 65, 81, 0.9), rgba(55, 65, 81, 0.5))`
+          : "rgba(55, 65, 81, 0.5)",
+      }}
+    >
       <h2 className="text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] font-semibold mb-2">
         {heading}
       </h2>
@@ -17,6 +28,7 @@ function Card({ heading, subHeading }: CardProps) {
     </div>
   );
 }
+
 const cardContent = [
   {
     heading: "Sessions",

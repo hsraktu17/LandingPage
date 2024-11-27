@@ -1,10 +1,10 @@
-// Path.tsx
-"use client";
 
-import { useState } from "react";
 import CourseCards from "./courseCards";
-// import ArrowDown from "../public/ArrowDownB.svg";
-// import Image from "next/image";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import useCoursePath from '../hooks/useCoursePath'
+
+gsap.registerPlugin(ScrollTrigger);
 
 const businessCentricCourses = [
   {
@@ -150,16 +150,21 @@ const techCentricCourses = [
 ];
 
 export default function Path() {
-  const [isBusinessCentric, setIsBusinessCentric] = useState(true);
+  
+  const { isBusinessCentric, setIsBusinessCentric, pathCohortInfo } = useCoursePath();
+  
 
   return (
-    <div className="text-white py-[38px] px-[120px] sm:px-[10px] flex flex-col items-center justify-center main-container" id="curriculum">
+    <div
+      className="text-white py-[38px] px-[120px] pt-48 sm:px-[10px] flex flex-col items-center justify-center main-container"
+      id="curriculum"
+    >
       <div className="text-[36px] font-[600] max-w-4xl text-center mb-8">
         Choose the path that best aligns with your goals
       </div>
-      <div className="business-centric-button">
+      <div className="business-centric-button ">
         <button
-          className={`h-[100px] sm:h-[120px]  w-[346px]  ${
+          className={`h-[100px] sm:h-[120px]  w-[346px] border-button ${
             isBusinessCentric
               ? "bg-white text-black"
               : "bg-transparent text-white"
@@ -174,7 +179,7 @@ export default function Path() {
           </div>
         </button>
         <button
-          className={`h-[100px] sm:h-[120px]  w-[346px] ${
+          className={`h-[100px] sm:h-[120px]  w-[346px] choose-path-button ${
             !isBusinessCentric
               ? "bg-white text-black"
               : "bg-transparent text-white"
@@ -211,7 +216,10 @@ export default function Path() {
           </>
         )}
       </div>
-      <div className="mt-8 flex overflow-x-scroll w-full gap-4 sm:gap-[72px] pl-[120px] business-card">
+      <div
+        ref={pathCohortInfo}
+        className="mt-8 flex overflow-x-auto w-full gap-4 sm:gap-[72px] pl-[120px] business-card "
+      >
         {isBusinessCentric
           ? businessCentricCourses.map((course, index) => (
               <CourseCards
@@ -234,11 +242,14 @@ export default function Path() {
               />
             ))}
       </div>
-      <button className=" ml-20 py-3 items-center flex mt-5 sm:py-3.5 md:py-4  pl-16 bg-white text-black transition w-full sm:w-96 download-carriculam2">
-      <a href="https://pdhschool.notion.site/School-of-Project-Dark-Horse-13ee8b9ff7988058bf65c189d5bd114d" target="_blank" className="text-xl">
-        Link To Detailed Curriculum{" "}
+      <button className="ml-20 py-3 items-center flex mt-5 sm:py-3.5 md:py-4 pl-16 bg-white text-black border-button transition w-full sm:w-96 download-carriculam2">
+        <a
+          href="https://pdhschool.notion.site/School-of-Project-Dark-Horse-13ee8b9ff7988058bf65c189d5bd114d"
+          target="_blank"
+          className="text-xl"
+        >
+          Link To Detailed Curriculum
         </a>
-      
       </button>
     </div>
   );
