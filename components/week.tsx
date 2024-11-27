@@ -43,7 +43,7 @@ export default function Week() {
       <div className="text-[22px] font-[400] text-center">
         PDH School’s commitment doesn’t end at graduation
       </div>
-      <div className="flex justify-center mt-8 week-card flex-wrap">
+      <div className="flex justify-center mt-8 week-card ">
         {array.map((card, index) => (
           <Card
             key={index}
