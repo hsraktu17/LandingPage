@@ -31,15 +31,15 @@ export default function Hero() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <button className="bg-white py-3  px-6 sm:px-8 md:px-10 text-black w-full sm:w-56 font-medium hover:bg-gray-200 transition">
+          <button className="bg-white py-3 px-5 text-black w-full sm:w-56 font-medium hover:bg-gray-200 transition button-hero-apply">
             Apply Now
           </button>
         </a>
         <a
           href="https://pdhschool.notion.site/School-of-Project-Dark-Horse-13ee8b9ff7988058bf65c189d5bd114d"
-          target="_blank"
+          target="_blank"button-hero-apply
         >
-          <button className=" button ml-20  flex py-3 border-t border-b border-white text-white hover:bg-white hover:text-black font-medium transition px-10 text-center download-carriculam">
+          <button className=" button ml-20   border-t border-b border-white text-white hover:bg-white hover:text-black font-medium transition py-3 px-7 text-center download-carriculam">
             Link To Detailed Curriculum
           </button>
         </a>

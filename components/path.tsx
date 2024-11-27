@@ -179,7 +179,7 @@ export default function Path() {
           </div>
         </button>
         <button
-          className={`h-[100px] sm:h-[120px]  w-[346px] choose-path-button ${
+          className={`h-[100px] sm:h-[120px]  w-[346px] border-button ${
             !isBusinessCentric
               ? "bg-white text-black"
               : "bg-transparent text-white"

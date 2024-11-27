@@ -13,7 +13,7 @@ const useCoursePath = () => {
     if (container && !isMobileOrTablet) {
       const autoScroll = gsap.to(container, {
         scrollLeft: container.scrollWidth - container.clientWidth,
-        duration: 3,
+        duration: 10,
         ease: "linear",
       });
 
