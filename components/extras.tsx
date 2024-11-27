@@ -6,6 +6,7 @@ import img1 from "@/public/hands_on_learning.svg";
 import img2 from "@/public/feedback.svg";
 import img3 from "@/public/Layer_1 (2).svg";
 import img4 from "@/public/Layer_1 (3).svg";
+import useHoverPosition from "@/hooks/useHoverPosition";
 
 const array = [
   {
@@ -45,7 +46,7 @@ export default function Extras() {
           Experience real-world startup success through hands-on learning
         </div>
       </div>
-      <div className="flex mt-8 justify-center cohort-card">
+      <div className="flex mt-8 justify-center cohort-card flex-wrap">
         {array.map((card, index) => (
           <Card
             key={index}
@@ -66,8 +67,16 @@ interface cardProps {
 }
 
 function Card({ img, title, description }: cardProps) {
+  const { hoverPosition, handleMouseMove, resetHoverPosition } = useHoverPosition();
+
   return (
-    <div className="bg-gray-800 rounded-lg shadow-lg p-8 m-4 w-[300px] card-section">
+    <div className="bg-gray-800 rounded-sm shadow-lg p-8 m-4 w-[300px] card-section"   onMouseMove={handleMouseMove}
+    onMouseLeave={resetHoverPosition}
+    style={{
+      background: hoverPosition
+        ? `radial-gradient(circle at ${hoverPosition.x}px ${hoverPosition.y}px, rgba(55, 65, 81, 0.9), rgba(55, 65, 81, 0.5))`
+        : "rgba(55, 65, 81, 0.5)",
+    }}>
       <div className="flex items-center justify-left w-full h-48 mb-4">
         <Image
           src={img}

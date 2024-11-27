@@ -1,8 +1,8 @@
 "use client";
 
-import img1 from "@/public/mayank.svg";
+import img1 from "@/public/images1.jpg";
 import img2 from "@/public/manoj.svg";
-import img3 from "@/public/harsh.svg";
+import img3 from "@/public/images2.jpg";
 import img5 from "@/public/image.svg";
 import img6 from "@/public/image (1).svg";
 // import img7 from "@/public/image (2).svg";
@@ -45,7 +45,7 @@ const imageArray = [
 export default function ImageCard() {
   return (
     <div className="w-full mt-8 mb-8  overflow-x-auto">
-      <div className="grid grid-flow-col gap-[15px] mentor-card">
+      <div className="grid grid-flow-col gap-[25px] mentor-card">
         {imageArray.map((item, index) => (
           <DirectionAwareHover
             key={index}

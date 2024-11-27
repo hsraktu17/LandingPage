@@ -36,14 +36,14 @@ const array = [
 
 export default function Week() {
   return (
-    <div className="flex flex-col items-center justify-center text-white p-[120px] common-container px-[120px] bg-[#282F36]">
+    <div className="flex flex-col items-center justify-center mt-36 text-white p-[120px] common-container px-[120px] bg-[#282F36]">
       <div className="text-[36px] font-[600] mb-2 text-center">
         Beyond the 6-Week Program
       </div>
       <div className="text-[22px] font-[400] text-center">
         PDH School’s commitment doesn’t end at graduation
       </div>
-      <div className="flex justify-center mt-8 week-card">
+      <div className="flex justify-center mt-8 week-card flex-wrap">
         {array.map((card, index) => (
           <Card
             key={index}

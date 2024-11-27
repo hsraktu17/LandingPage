@@ -74,7 +74,7 @@ export default function Navbar() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <button className="ml-0 lg:ml-4 px-6 py-2 border-t border-b border-white text-white hover:bg-white hover:text-black transition w-full lg:w-auto mt-4 lg:mt-0">
+          <button className="ml-0 lg:ml-4 px-6 py-2 border-t border-b border-white text-white hover:bg-white hover:text-black transition w-full lg:w-auto mt-4 lg:mt-0 border-button">
             Register Now
           </button>
         </a>
