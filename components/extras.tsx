@@ -46,7 +46,7 @@ export default function Extras() {
           Experience real-world startup success through hands-on learning
         </div>
       </div>
-      <div className="flex mt-8 justify-center cohort-card flex-wrap">
+      <div className="flex mt-8 justify-center cohort-card">
         {array.map((card, index) => (
           <Card
             key={index}

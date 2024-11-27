@@ -30,7 +30,7 @@ export default function Avg() {
       <div className="text-[36px] font-[600] mb-2 text-center">
         Average Program Benefits
       </div>
-      <div className="grid grid-cols-1 program-container lg:grid-cols-5 gap-4 mt-8 px-24">
+      <div className="grid grid-cols-1 program-container lg:grid-cols-5 gap-4 mt-8 w-[1328px]">
         {array.map((card, index) => (
           <Card key={index} title={card.title} description={card.description} />
         ))}

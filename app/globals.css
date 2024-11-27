@@ -111,6 +111,7 @@
   .program-container {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     padding: 0;
+    width: auto !important;
     gap: 0;
   }
   .accordian-container{
@@ -164,6 +165,10 @@
   .extra-page,
   .mentors-page {
     padding: 0;
+  }
+
+  .extra-page{
+    margin-top: 60px;
   }
   .cohort-accordion {
     width: 100%;
@@ -224,6 +229,9 @@
   .common-container {
     padding: 0 !important;
   }
+  .week-card {
+    flex-wrap: wrap;
+  }
   .main-container {
     padding: 10px !important;
   }
@@ -241,6 +249,8 @@
   .program-container {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0;
+    width: auto;
+    
   }
   .hero-buttons a {
     width: 100%;
@@ -289,6 +299,12 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+}
+
+@media (min-width: 1024px){
+ .program-container{
+  padding: 0;
+ }
 }
 .accordion-content {
   padding: 10px 16px;
