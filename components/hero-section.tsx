@@ -15,15 +15,27 @@ export default function Hero() {
         >
           Your 6-week launch pad to startup success
         </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+        <div
+        
           className="text-[14px] sm:text-[16px] md:text-[20px] lg:text-[22px] font-normal max-w-full md:max-w-[700px] mx-auto md:mx-0"
         >
-          Build, Validate, and Launch Your Dream Startup with India’s Top
-          Mentors
-        </motion.div>
+           {Array.from("Build, Validate, and Launch Your Dream Startup with India’s Top Mentors").map((char, index) => (
+            <motion.span
+              key={index}
+              initial={{ x: Math.random() * 100 - 50, opacity: 0 }}
+              animate={{
+                x: 0,
+                opacity: 1,
+                transition: {
+                  duration: 0.2,
+                  delay: index * 0.03,
+                },
+              }}
+            >
+              {char}
+            </motion.span>
+          ))}
+        </div>
       </div>
       <div className="text-center flex flex-wrap md:text-left hero-buttons">
         <a

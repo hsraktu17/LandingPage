@@ -218,7 +218,7 @@ export default function Path() {
       </div>
       <div
         ref={pathCohortInfo}
-        className="mt-8 flex overflow-x-auto w-full gap-4 sm:gap-[72px] pl-[120px] business-card "
+        className="mt-8 flex overflow-x-auto w-full gap-4 sm:gap-[72px] pl-[120px] business-card no-select"
       >
         {isBusinessCentric
           ? businessCentricCourses.map((course, index) => (
