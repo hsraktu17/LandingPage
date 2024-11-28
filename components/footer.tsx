@@ -22,12 +22,12 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="bg-white py-[12px] md:py-[16px] px-[20px] md:px-[24px] text-black">
+            <button className="bg-white py-[12px] md:py-[16px] px-[20px] font-semibold md:px-[24px] text-black button-hero-apply ">
               Apply Now
             </button>
           </a>
           <button
-            className="bg-transparent border-t border-b border-white text-white hover:bg-white hover:text-black transition font-semibold py-2 px-4"
+            className="bg-transparent border-t border-b border-white text-white hover:bg-white hover:text-black transition font-semibold py-2 px-4 border-button"
             onClick={() =>
               (window.location.href = "mailto:team@projejectdark.horse")
             }

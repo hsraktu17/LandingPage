@@ -88,7 +88,7 @@
     padding: 0 !important;
   }
   .business-centric-button {
-    display: grid;
+    display: grid !important;
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .business-centric-button button {
@@ -405,7 +405,7 @@
 .button {
   background-color: white;
   color: black; 
-  transition: background-color 1s ease, color 1s ease, transform 1s ease;
+  transition: background-color 0.5s ease, color 1s ease, transform 0.5s ease;
   transform: scale(1); 
 }
 
@@ -425,6 +425,15 @@
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+.button-hero-apply {
+  transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.button-hero-apply:hover {
+  background-color: #e5e7eb;  
+    transform: scale(1.05); 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+}
 
 .border-button {
  
@@ -436,4 +445,17 @@
   background-color: rgb(40 47 54 / var(--tw-bg-opacity)); 
   color: white; 
   transform: scale(1.05);
+}
+
+.footer-icons a {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.business-centric-button{
+  display: flex;
+  gap: 12px;
+}
+
+.footer-icons a:hover {
+  transform: scale(1.1); /* Scale the icon slightly */
+  /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6); Glow effect */
 }
