@@ -64,7 +64,6 @@
     @apply bg-background text-foreground;
   }
 }
-
 /* Mobile screens (max-width: 576px) */
 @media screen and (max-width: 576px) {
   .card-content {
@@ -127,11 +126,10 @@
   .download-carriculam {
     margin-left: 0;
     width: 100%;
-    padding-left: 90px;
     margin-top: 10px;
   }
   .download-carriculam2 {
-    padding-left: 60px;
+    padding-left: 77px;
     margin-top: 10px;
     width: 400px;
     margin-right: 77px;

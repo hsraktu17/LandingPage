@@ -16,7 +16,6 @@ export default function Hero() {
           Your 6-week launch pad to startup success
         </motion.div>
         <div
-        
           className="text-[14px] sm:text-[16px] md:text-[20px] lg:text-[22px] font-normal max-w-full md:max-w-[700px] mx-auto md:mx-0"
         >
            {Array.from("Build, Validate, and Launch Your Dream Startup with India’s Top Mentors").map((char, index) => (
