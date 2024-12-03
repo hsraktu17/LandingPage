@@ -35,7 +35,7 @@ export default function CohortInfo() {
             <div className="text-lg text-white">
               Cost <br />
               <div className="font-[600]">
-                INR 25,000{" "}
+                INR 50,000{" "}
                 <span className="line-through ml-2 font-[400] text-[14px]">
                   INR 75,000
                 </span>
@@ -48,29 +48,28 @@ export default function CohortInfo() {
                     <div className="flex items-center">
                       <Image src={infoIcon} alt="Info" className="h-10" />
                       <span className="ml-2 text-[18px]">
-                        Price increase from 20 Nov 11:59 PM
+                        Price increase from 15 Dec 11:59 PM
                       </span>
                     </div>
-                    {/* Replace with your arrow icon */}
                   </AccordionTrigger>
-                  <AccordionContent className="text-left accordion-content flex justify-between text-xl font-bold">
-                    <span>Until Nov 20</span> <span>INR 25000</span>
-                  </AccordionContent>
-                  <AccordionContent className="text-left accordion-content flex justify-between text-xl font-bold">
-                    <span>Until Nov 30</span> <span>INR 30000</span>
-                  </AccordionContent>
-                  <AccordionContent className="text-left accordion-content flex justify-between text-xl font-bold">
+                  <AccordionContent className="text-left accordion-content flex justify-between text-xl font-bold ">
                     <span>Until Dec 15</span> <span>INR 50000</span>
                   </AccordionContent>
                   <AccordionContent className="text-left accordion-content flex justify-between text-xl font-bold">
                     <span>Until Dec 30</span> <span>INR 75000 </span>
+                  </AccordionContent>
+                  <AccordionContent className="text-left accordion-content flex justify-between text-xl font-bold line-through">
+                    <span>Until Nov 20</span> <span>INR 25000</span>
+                  </AccordionContent>
+                  <AccordionContent className="text-left accordion-content flex justify-between text-xl font-bold line-through">
+                    <span>Until Nov 30</span> <span>INR 30000</span>
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
             </div>
           </div>
 
-          <div className="w-full h-auto p-8 flex flex-col gap-4 bg-[#00000033]">
+          <div className="w-full h-auto p-8 flex flex-col gap-4 bg-[#00000033] scholarship-section">
             <a
               href="https://pdhschool.notion.site/13de8b9ff79880cb8019e0da17497c4c?pvs=105"
               target="_blank"
@@ -81,8 +80,14 @@ export default function CohortInfo() {
                 <Image src={arrowRight} alt="Right" />
               </button>
             </a>
-            <div className="text-white text-xs">
+            <div className=" flex justify-between text-white text-sm">
               Only 30 seats available – don’t miss out!
+              <a    href="https://pdhschool.notion.site/13de8b9ff79880cb8019e0da17497c4c?pvs=105"
+              target="_blank"
+              rel="noopener noreferrer" className="underline">
+                {" "}
+                Apply For Scholarship
+              </a>
             </div>
           </div>
         </div>
