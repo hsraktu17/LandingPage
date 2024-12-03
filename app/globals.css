@@ -208,6 +208,9 @@
   .mentor-text {
     opacity: 1 !important;
   }
+  .scholarship-section{
+    padding: 2rem 10px;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 990px) {
