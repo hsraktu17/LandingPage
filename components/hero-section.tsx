@@ -1,3 +1,4 @@
+"use client"
 import Cards from "./card";
 import { motion } from "framer-motion";
 export default function Hero() {
