@@ -1,3 +1,5 @@
+"use client"; // Add this line at the top
+
 import { useState } from "react";
 import Image from "next/image";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -15,7 +17,9 @@ export default function Navbar() {
   return (
     <div className="py-10 px-6 sm:px-10 lg:px-[120px] flex items-center justify-between bg-transparent border-gray-600 relative">
       <div className="flex items-center space-x-4 sm:space-x-10 lg:space-x-80">
-        <Image src={pdhschool} alt="logo" className="w-auto h-8 sm:h-10" />
+       <a href="/">
+       <Image src={pdhschool} alt="logo" className="w-auto h-8 sm:h-10" />
+       </a>
         {/* <Image
           src={pdhschool1}
           alt=""
@@ -69,6 +73,12 @@ export default function Navbar() {
         <Link to="faq" spy={true} smooth={true} offset={50} duration={500}>
           <p className="text-white cursor-pointer hover:text-gray-300">FAQs</p>{" "}
         </Link>
+      
+        <a href="/blog" >
+          <p className="text-white cursor-pointer hover:text-gray-300">
+           Blog
+          </p>
+        </a>
         <a
           href="https://pdhschool.notion.site/13de8b9ff79880cb8019e0da17497c4c?pvs=105"
           target="_blank"
