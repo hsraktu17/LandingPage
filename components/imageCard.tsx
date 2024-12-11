@@ -30,7 +30,7 @@ const imageArray = [
   },
   {
     image: img5,
-    name: "Harshit C.",
+    name: "Harshit",
     description: "Co-founder, PDH",
     comingSoon: false,
   },
