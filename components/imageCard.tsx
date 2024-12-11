@@ -3,7 +3,7 @@
 import img1 from "@/public/images1.jpg";
 import img2 from "@/public/manoj.svg";
 import img3 from "@/public/images2.jpg";
-import img5 from "@/public/image.svg";
+import img5 from "@/public/Frame 475.jpg";
 import img6 from "@/public/image (1).svg";
 // import img7 from "@/public/image (2).svg";
 // import img8 from "@/public/Pexels Photo by Italo Melo.svg";
@@ -30,9 +30,9 @@ const imageArray = [
   },
   {
     image: img5,
-    name: "Name 4",
-    description: "Description 4",
-    comingSoon: true,
+    name: "Harshit C.",
+    description: "Co-founder, PDH",
+    comingSoon: false,
   },
   {
     image: img6,
